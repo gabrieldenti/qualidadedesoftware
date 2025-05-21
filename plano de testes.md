@@ -59,6 +59,21 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 
 <br/>
 
+### Requisitos não-funcionais:
+
+
+| Identificador do requisito   | Nome do requisito                                                  | Casos de uso relacionados                                             |
+|------------------------------|--------------------------------------------------------------------|---------------------------------------------------------------------  |
+| id RNF1                      | Tempo de resposta das páginas inferior a 2 segundos                | id UC1, UC2, UC3, UC4, UC5, UC6, UC7, UC8, UC9, UC10                  |
+| id RNF2                      | Capacidade de suporte a 100 usuários simultâneos                   | id UC1, UC2, UC3, UC4, UC5, UC6, UC7, UC8, UC9, UC10                  |
+| id RNF3                      | Segurança dos dados do cliente (LGPD compliance)                   | id UC1, UC2, UC3, UC4, UC5, UC7, UC8, UC10                            |
+| id RNF4                      | Compatibilidade com navegadores Chrome e Firefox                   | id UC1, UC2, UC3, UC4, UC5, UC6, UC7, UC8, UC9, UC10                  |
+| id RNF5                      | Disponibilidade de 99,9% no horário comercial                      | id UC1, UC2, UC3, UC4, UC5, UC6, UC7, UC8, UC9, UC10                  |
+| id RNF6                      | Suporte a múltiplos idiomas (Português e Inglês)                   | id UC1, UC2, UC3, UC4, UC5, UC6, UC7, UC8, UC9, UC10                  |
+| id RNF7                      | Carregamento de imagens em alta resolução em menos de 3 segundos   | id UC3, UC9                                                           |
+| id RNF8                      | Integração com métodos de pagamento locais (PIX e boleto)          | id UC5                                                                |
+| id RNF9                      | Navegação acessível para pessoas com deficiência                   | id UC1, UC2, UC3, UC4, UC5, UC6, UC7, UC8, UC9, UC10                  |
+| id RNF10                     | Resposta de consulta de estoque em até 1 segundo                   | id UC3, UC4, UC6                                                      |
 
 ## 4. Casos de teste - Manuais
 
