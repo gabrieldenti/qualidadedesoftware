@@ -8,7 +8,7 @@
 
 *versão 1.0*
 
-   *Autores: Gabriel Denti, Caio Teixeira, Laila Covre, Celso *
+   *Autores: Gabriel Denti, Caio Teixeira, Laila Covre, Celso*
 
 ---
 
