@@ -15,15 +15,15 @@
 ## 1 Introdução
 
 ### 1.1 Visão Geral da Aplicação  
-[Descrição sucinta da aplicação]
+O sistema Swag Labs é uma aplicação web voltada para simulação de uma loja virtual, permitindo a realização de operações como login, adição e remoção de produtos no carrinho, finalização de compras, entre outros. Seu propósito é fornecer um ambiente de testes para validação de funcionalidades de um e-commerce.
 
 ### 1.2 Escopo do Plano de Teste  
-[Definição do que será testado]
+Este plano de teste tem como escopo a validação das funcionalidades principais da aplicação Swag Labs, garantindo que os fluxos críticos da loja — como autenticação, navegação por produtos, gerenciamento do carrinho de compras e finalização de pedidos — estejam funcionando corretamente. Além disso, serão avaliados requisitos não-funcionais como o tempo de resposta e a estabilidade da aplicação.
 
 ### 1.3 Objetivos do Plano de Teste  
-- [Objetivo 1]  
-- [Objetivo 2]  
-- [Objetivo 3]  
+-Garantir que as funcionalidades críticas do sistema estejam funcionando conforme o esperado.
+Identificar e reportar falhas ou comportamentos inesperados.
+-Avaliar a usabilidade e a performance geral do sistema em diferentes cenários de uso.
 
 ---
 
