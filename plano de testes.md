@@ -9,35 +9,20 @@
    *Autores: Gabriel Denti*
 
 
+## 1 INTRODUÇÃO
 
-## 1 - Introdução
+### 1.1 Visão Geral da Aplicação  
+[Descrição sucinta da aplicação]
 
-   Este documento descreve os requisitos a testar, os  tipos de testes definidos para cada iteração, os recursos de hardware e software a serem empregados e o cronograma dos testes ao longo do projeto. As seções referentes aos requisitos, recursos e cronograma servem para permitir ao gerente do projeto acompanhar a evolução dos testes.
+### 1.2 Escopo do Plano de Teste  
+[Definição do que será testado]
 
-  Com esse documento, você deve:
-   
-  - Identificar informações de projeto existentes e os componentes de software que devem ser testados.
-  - Listar os Requisitos a testar.
-  - Recomendar e descrever as estratégias de teste a serem empregadas.
-  - Identificar os recursos necessários e prover uma estimativa dos esforços de teste.
-  - Listar os elementos resultantes do projeto de testes.
+### 1.3 Objetivos do Plano de Teste  
+- [Objetivo 1]  
+- [Objetivo 2]  
+- [Objetivo 3]  
 
-
-### 1.1 Propósito
-
-   O objetivo deste Plano de Teste é definir as diretrizes, metodologias e recursos necessários para garantir que a aplicação de e-commerce atenda aos requisitos funcionais e não-funcionais especificados.
-
-
-### 1.2 Escopo
-
-
-Este plano abrange o teste funcional e não-funcional das principais funcionalidades do site de e-commerce, incluindo:
-
-   - Cadastro e login de clientes
-   - Busca e navegação de produtos
-   - Adição de produtos ao carrinho de compras
-   - Processo de checkout e pagamento
-   - Persistência e segurança de dados dos clientes
+---
 
 
 ## 2 - Requisitos a Testar
@@ -49,8 +34,7 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
    Caso seja necessário, liste aqui os requisitos a testar subdivididos em casos de uso e requisitos não-funcionais.
 
 
-
-### Casos de uso:
+### 2.1 Casos de uso:
 
 
 | Identificador do caso de uso | Nome do caso de uso                |
@@ -59,13 +43,31 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 
 <br/>
 
-### Requisitos funcionais:
+### 2.2 Requisitos funcionais:
 
 
 | Identificador do requisito   | Nome do requisito                                                  | Casos de uso relacionados                                             |
 |------------------------------|--------------------------------------------------------------------|---------------------------------------------------------------------  |
 | id RNF1                      | Tempo de resposta das páginas inferior a 2 segundos                | id UC1, UC2, UC3, UC4, UC5, UC6, UC7, UC8, UC9, UC10                  |
 
+
+### 2.3 Níveis de Criticidade  
+| Nível    | Descrição                                               |
+|----------|---------------------------------------------------------|
+| Crítico  | Impede o uso essencial do sistema                       |
+| Alto     | Impacta significativamente funções importantes          |
+| Médio    | Afeta funcionalidades secundárias                       |
+| Baixo    | Problemas cosméticos ou de baixa relevância             |
+
+### 2.4 SLA de Resolução  
+| Severidade | Prazo Máximo para Correção |
+|------------|----------------------------|
+| Crítico    | 24 horas                   |
+| Alto       | 72 horas                   |
+| Médio      | 5 dias                     |
+| Baixo      | 10 dias                    |
+
+---
 
 ## 4. Casos de teste - Manuais
 
