@@ -9,7 +9,7 @@
    *Autores: Gabriel Denti*
 
 
-## 1 INTRODUÇÃO
+## 1 Introdução
 
 ### 1.1 Visão Geral da Aplicação  
 [Descrição sucinta da aplicação]
@@ -25,7 +25,7 @@
 ---
 
 
-## 2 - Requisitos a Testar
+## 2 - Requisitos a Testar e Testes
 
    Esta seção deve conter os casos de uso e requisitos não funcionais identificados como objetos dos testes ao longo do desenvolvimento do projeto.
 Como, em geral, os requisitos a testar são obtidos diretamente dos requisitos do sistema, esta seção é concebida como opcional. Assim sendo, sempre que novos requisitos a testar, que não constem como requisitos do sistema, forem identificados ou, simplesmente, por questões de organização e clareza, esta seção deve ser preenchida.
@@ -100,7 +100,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-## 7.0 - Template de Reporte de Defeitos
+## 5.0 - Template de Reporte de Defeitos
 
   Este template serve para facilitar o registro de bugs, garantindo que todas as informações essenciais estejam documentadas de forma clara. Use os campos abaixo para descrever o problema em detalhes:
   
@@ -118,7 +118,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-### 7.1 Informações Básicas
+### 5.1 Informações Básicas
 
 - **Data do Relato:** [Data em que o bug foi reportado]
 - **Relatado por:** [Nome do responsável por relatar o bug]
@@ -127,7 +127,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 - **Severidade:** [Crítica, Alta, Média, Baixa]
 
 
-### 7.2 Descrição do Bug
+### 5.2 Descrição do Bug
 
 **Descrição Completa**<br/>
 
@@ -150,7 +150,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
   [Explique o comportamento atual observado no sistema.]
 
-### 7.3 Anexos
+### 5.3 Anexos
 
 **Capturas de tela**<br/>
 
@@ -164,7 +164,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
   [Logs ou mensagens de erro do sistema relacionados, se aplicável]
 
-### 7.4 Ambiente de Teste
+### 5.4 Ambiente de Teste
 
 **Desktop (complete as seguintes informações):** <br/>
 
@@ -182,7 +182,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
   - Rede:[Wi-Fi, 3G, 4G, etc. (se relevante)]
 
 
-### 7.6 Status do Bug
+### 5.6 Status do Bug
 
 - **Status Atual:**
   - [ ] Novo
@@ -196,3 +196,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 - **Versão de Correção:** [Versão do sistema onde a correção foi aplicada]
 
 ---
+
+## 6 - REPORT DE DEFEITO
+
+[Espaço para preenchimento do defeito encontrado seguindo o template acima]
