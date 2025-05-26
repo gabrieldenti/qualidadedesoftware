@@ -69,15 +69,15 @@ Dependendo das informações disponíveis, essa seção pode começar a ser pree
 
 ---
 
-## 4. Casos de teste - Manuais
+## 3. Casos de teste - Manuais
 
-### 4.1 Introdução
+### 3.1 Introdução
 
 Abaixo os cenários e casos de teste necessários para validar os requisitos funcionais do sistema de e-commerce. Cada requisito é associado a cenários específicos que serão testados para garantir que o sistema opere conforme o esperado.
 
 ---
 
-### 4.2 Estrutura de Caso de Teste
+### 3.2 Estrutura de Caso de Teste
 
 | Campo               | Descrição                                                              |
 |---------------------|------------------------------------------------------------------------|
@@ -92,15 +92,15 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-### 4.3 Requisitos e Casos de Teste
+### 3.3 Requisitos e Casos de Teste
 
-#### 4.3.1 Requisito Funcional 1 (XXXX): XXXX
+#### 3.3.1 Requisito Funcional 1 (XXXX): XXXX
 
 ##### Cenário 1: XXXXXXXXXXXXXXXXXX
 
 ---
 
-## 5.0 - Template de Reporte de Defeitos
+## 4.0 - Template de Reporte de Defeitos
 
   Este template serve para facilitar o registro de bugs, garantindo que todas as informações essenciais estejam documentadas de forma clara. Use os campos abaixo para descrever o problema em detalhes:
   
@@ -118,7 +118,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-### 5.1 Informações Básicas
+### 4.1 Informações Básicas
 
 - **Data do Relato:** [Data em que o bug foi reportado]
 - **Relatado por:** [Nome do responsável por relatar o bug]
@@ -127,7 +127,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 - **Severidade:** [Crítica, Alta, Média, Baixa]
 
 
-### 5.2 Descrição do Bug
+### 4.2 Descrição do Bug
 
 **Descrição Completa**<br/>
 
@@ -150,7 +150,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
   [Explique o comportamento atual observado no sistema.]
 
-### 5.3 Anexos
+### 4.3 Anexos
 
 **Capturas de tela**<br/>
 
@@ -164,7 +164,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
   [Logs ou mensagens de erro do sistema relacionados, se aplicável]
 
-### 5.4 Ambiente de Teste
+### 4.4 Ambiente de Teste
 
 **Desktop (complete as seguintes informações):** <br/>
 
@@ -182,7 +182,7 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
   - Rede:[Wi-Fi, 3G, 4G, etc. (se relevante)]
 
 
-### 5.6 Status do Bug
+### 4.5 Status do Bug
 
 - **Status Atual:**
   - [ ] Novo
@@ -197,6 +197,6 @@ Abaixo os cenários e casos de teste necessários para validar os requisitos fun
 
 ---
 
-## 6 - REPORT DE DEFEITO
+## 5 - REPORT DE DEFEITO
 
 [Espaço para preenchimento do defeito encontrado seguindo o template acima]
