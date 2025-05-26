@@ -38,7 +38,7 @@ Esta seção define o alcance dos testes a serem executados, incluindo funcional
 
 | Identificador do caso de uso | Nome do caso de uso       |
 |------------------------------|---------------------------|
-| id XXX                       | XXXXXXXXXXXXX             |
+| id XXX                       | XXXXXXXXXXXX             |
 
 #### 2.2.2 Requisitos funcionais
 
