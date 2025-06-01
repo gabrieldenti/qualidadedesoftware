@@ -22,7 +22,9 @@ Este plano de teste tem como escopo a validação das funcionalidades principais
 
 ### 1.3 Objetivos do Plano de Teste  
 -Garantir que as funcionalidades críticas do sistema estejam funcionando conforme o esperado.
+
 -Identificar e reportar falhas ou comportamentos inesperados.
+
 -Avaliar a usabilidade e a performance geral do sistema em diferentes cenários de uso.
 
 ---
