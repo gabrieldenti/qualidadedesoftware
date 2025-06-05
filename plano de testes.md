@@ -2,7 +2,7 @@
 
 **Nome do Sistema**: Swag Labs 
 
-**Link do site**: https://www.saucedemo.com/v1/index.html
+**Link do site**: https://www.saucedemo.com/
 
 **Data**: 01/06/2025
 
