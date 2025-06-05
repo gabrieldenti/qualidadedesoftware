@@ -58,6 +58,19 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 
 ## 2.3 Cenários e Casos de Teste
 
+#### Estrutura de Caso de Teste
+
+| Campo                     | Descrição                                                        |
+|---------------------------|------------------------------------------------------------------|
+| **Requisito**             | Requisito do sistema a ser validado                              |
+| **Cenário de Teste**      | Descrição da situação que será validada                          |
+| **ID do Caso**            | Identificador único do caso de teste                             |
+| **Objetivo**              | Objetivo específico do caso de teste                             |
+| **Passos**                | Passos detalhados para execução                                  |
+| **Resultado Esperado**    | Comportamento que o sistema deve apresentar após a execução      |
+| **Status**                | Passou / Falhou                                                  |
+| **Evidências/Observações**| Screenshots, logs ou comentários adicionais                      |
+
 ### CT001 – Remover item adicionado ao carrinho na página de produtos
 
 | Campo                     | Descrição                                                        |
@@ -67,17 +80,10 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **ID do Caso**            | CT001                                                            |
 | **Objetivo**              |  
   - Garantir que a remoção de um produto reflita corretamente no botão, no contador e na lista de itens do carrinho. |
-| **Passos**                |  
-  1. Acessar https://www.saucedemo.com e fazer login (usuário **problem_user** / **secret_sauce**).  
-  2. Na lista de produtos, clicar em **“Add to cart”** do produto **“Sauce Labs Bike Light”**.  
-  3. Em seguida, clicar em **“Remove”** para o mesmo produto. |
-| **Resultado Esperado**    |  
-  - O botão do produto volta a exibir **“Add to cart”**.  
-  - O contador do carrinho diminui de **“1”** para **“0”**.  
-  - O produto **“Sauce Labs Bike Light”** deixa de aparecer no carrinho. |
+| **Passos**                |  1. Acessar https://www.saucedemo.com e fazer login (usuário **problem_user** / **secret_sauce**).  2. Na lista de produtos, clicar em **“Add to cart”** do produto **“Sauce Labs Bike Light”**.  3. Em seguida, clicar em **“Remove”** para o mesmo produto. |
+| **Resultado Esperado**    |  - O botão do produto volta a exibir **“Add to cart”**.  - O contador do carrinho diminui de **“1”** para **“0”**.  - O produto **“Sauce Labs Bike Light”** deixa de aparecer no carrinho. |
 | **Status**                | Falhou                                                   |
-| **Evidências/Observações**|  
-  - Ao clicar em **“Remove”**, o botão não muda, o contador não decrementa e o produto permanece no carrinho. |
+| **Evidências/Observações**|  - Ao clicar em **“Remove”**, o botão não muda, o contador não decrementa e o produto permanece no carrinho. |
 
 ---
 
