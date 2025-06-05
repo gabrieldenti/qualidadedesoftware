@@ -2,7 +2,7 @@
 
 **Nome do Sistema**: Swag Labs  
 
-**Link do site**: https://www.saucedemo.com 
+**Link do site**: https://www.saucedemo.com  
 
 **Data**: 01/06/2025  
 
@@ -18,7 +18,7 @@
 O sistema Swag Labs é uma aplicação web voltada para simulação de uma loja virtual, permitindo a realização de operações como login, adição e remoção de produtos no carrinho, finalização de compras, entre outros. Seu propósito é fornecer um ambiente de testes para validação de funcionalidades de um e-commerce.
 
 ### 1.2 Escopo do Plano de Teste  
-Este plano de teste tem como escopo a validação das funcionalidades principais da aplicação Swag Labs, garantindo que os fluxos críticos da loja, como autenticação, navegação por produtos, gerenciamento do carrinho de compras e finalização de pedidos, estejam funcionando corretamente. Além disso, serão avaliados requisitos não-funcionais como o tempo de resposta e a estabilidade da aplicação.
+Este plano de teste tem como escopo a validação das funcionalidades principais da aplicação Swag Labs, garantindo que os fluxos críticos da loja — como autenticação, navegação por produtos, gerenciamento do carrinho de compras e finalização de pedidos — estejam funcionando corretamente. Além disso, serão avaliados requisitos não-funcionais como o tempo de resposta e a estabilidade da aplicação.
 
 ### 1.3 Objetivos do Plano de Teste  
 - Garantir que as funcionalidades críticas do sistema estejam funcionando conforme o esperado.  
@@ -42,7 +42,6 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 
 | Identificador do caso de uso | Nome do caso de uso            |
 |------------------------------|--------------------------------|
-| UC_AddToCart                 | Adicionar item ao carrinho     |
 | UC_RemoveFromCart            | Remover item do carrinho       |
 | UC_Checkout                  | Preencher informações de checkout e finalizar pedido |
 
@@ -50,40 +49,86 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 
 | Identificador do requisito | Nome do requisito                                                | Casos de uso relacionados    |
 |----------------------------|------------------------------------------------------------------|------------------------------|
-| RF001                      | Adicionar item ao carrinho                                       | UC_AddToCart                 |
-| RF002                      | Remover item do carrinho                                         | UC_RemoveFromCart            |
-| RF003                      | Validar formato do CEP (apenas números)                          | UC_Checkout                  |
-| RF004                      | Validar campos First Name e Last Name (entrada independente)     | UC_Checkout                  |
-| RF005                      | Exibir erro ao prosseguir sem Last Name preenchido               | UC_Checkout                  |
+| RF001                      | Remover item do carrinho                                         | UC_RemoveFromCart            |
+| RF002                      | Validar formato do CEP (apenas números)                          | UC_Checkout                  |
+| RF003                      | Validar campos First Name e Last Name (entrada independente)     | UC_Checkout                  |
 
-### 2.3 Cenários e Casos de Teste
 
-#### Estrutura de Caso de Teste
+---
+
+## 2.3 Cenários e Casos de Teste
+
+### CT001 – Remover item adicionado ao carrinho na página de produtos
 
 | Campo                     | Descrição                                                        |
 |---------------------------|------------------------------------------------------------------|
-| **Requisito**             | Requisito do sistema a ser validado                              |
-| **Cenário de Teste**      | Descrição da situação que será validada                          |
-| **ID do Caso**            | Identificador único do caso de teste                             |
-| **Objetivo**              | Objetivo específico do caso de teste                             |
-| **Passos**                | Passos detalhados para execução                                  |
-| **Resultado Esperado**    | Comportamento que o sistema deve apresentar após a execução      |
-| **Status**                | Passou / Falhou                                                  |
-| **Evidências/Observações**| Screenshots, logs ou comentários adicionais                      |
+| **Requisito**             | RF001                                                            |
+| **Cenário de Teste**      | Verificar que, após adicionar um item, é possível removê-lo clicando em “Remove” na página de produtos. |
+| **ID do Caso**            | CT001                                                            |
+| **Objetivo**              |  
+  - Garantir que a remoção de um produto reflita corretamente no botão, no contador e na lista de itens do carrinho. |
+| **Passos**                |  
+  1. Acessar https://www.saucedemo.com e fazer login (usuário **problem_user** / **secret_sauce**).  
+  2. Na lista de produtos, clicar em **“Add to cart”** do produto **“Sauce Labs Bike Light”**.  
+  3. Em seguida, clicar em **“Remove”** para o mesmo produto. |
+| **Resultado Esperado**    |  
+  - O botão do produto volta a exibir **“Add to cart”**.  
+  - O contador do carrinho diminui de **“1”** para **“0”**.  
+  - O produto **“Sauce Labs Bike Light”** deixa de aparecer no carrinho. |
+| **Status**                | Falhou                                                   |
+| **Evidências/Observações**|  
+  - Ao clicar em **“Remove”**, o botão não muda, o contador não decrementa e o produto permanece no carrinho. |
 
-| Requisito | Cenário de Teste                                                       | ID do Caso | Objetivo                                                                                      | Passos                                                                                                                                                                                                                                                   | Resultado Esperado                                                                                               | Status | Evidências/Observações                                                                                                   |
-|-----------|-------------------------------------------------------------------------|------------|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------|
-| RF001     | Adicionar item ao carrinho a partir da página inicial de produtos        | CT001      | Verificar que ao clicar em “Add to cart” um produto é inserido no carrinho e o botão muda.    | 1. Acessar https://www.saucedemo.com/v1/index.html<br>2. Fazer login com usuário válido (por ex.: standard_user / secret_sauce)<br>3. Na página de produtos, clicar em “Add to cart” do produto “Sauce Labs Backpack”                             | O botão muda para “Remove”, o contador de itens no ícone do carrinho incrementa para “1” e o produto passa a figurar no carrinho.  | Aberto | Ao clicar em “Add to cart”, o botão não muda, o contador não incrementa e o produto não aparece no carrinho.                |
-| RF001     | Tentar adicionar produto específico que não responde ao clique           | CT002      | Identificar comportamento quando um produto não é adicionado ao clicar em “Add to cart”.      | 1. Fazer login<br>2. Na página de produtos, clicar em “Add to cart” do produto “Test.allTheThings() T-Shirt (Red)”                                                                                                                                       | Espera-se que o botão mude para “Remove” e o contador de itens aumente para “1”.                                       | Aberto | O produto não é adicionado ao carrinho, o botão permanece em “Add to cart” e o contador não altera.                       |
-| RF002     | Remover item adicionado ao carrinho na página inicial de produtos         | CT003      | Verificar que, após adicionar um item, é possível removê-lo clicando em “Remove”.             | 1. Fazer login<br>2. Clicar em “Add to cart” do “Sauce Labs Bike Light”<br>3. Clicar em “Remove” para o mesmo produto                                                                                                                                   | O botão volta para “Add to cart”, o contador de itens decrementa (para “0”) e o produto sai do carrinho.                 | Aberto | Ao clicar em “Remove”, o botão não muda, o contador não decrementa e o produto permanece no carrinho.                       |
-| RF003     | Inserir letras e caracteres especiais no campo CEP durante checkout        | CT004      | Garantir que o campo “Postal Code” aceite somente números.                                      | 1. Adicionar ao menos um item ao carrinho<br>2. Clicar no ícone do carrinho<br>3. Clicar em “Checkout”<br>4. Preencher “First Name” com “Gabriel”<br>5. Preencher “Last Name” com “Denti”<br>6. No campo “Postal Code”, digitar “ABC123!@#” | O campo “Postal Code” deve aceitar apenas dígitos (bloquear ou recusar letras e caracteres especiais). Se inválido, exibir “Error: Postal Code is required”. | Aberto | O campo aceita letras e caracteres especiais sem validação, permitindo “ABC123!@#”.                                         |
-| RF004     | Inserir texto nos campos First Name e Last Name para verificar independência | CT005      | Verificar se é possível digitar “First Name” e “Last Name” sem que um sobrescreva o outro.     | 1. Na tela de “Checkout: Your Information”, no campo “First Name”, digitar “Gabriel”<br>2. No campo “Last Name”, digitar “Denti”                                                                                                                         | O campo “First Name” deve manter “Gabriel” e o campo “Last Name” deve armazenar “Denti” de forma independente.           | Aberto | Ao digitar em “Last Name”, o texto sobrescreve o que foi digitado em “First Name”; o campo “Last Name” fica vazio.         |
-| RF005     | Prosseguir no checkout sem preencher Last Name e verificar mensagem de erro | CT006      | Verificar se, ao tentar continuar sem “Last Name”, aparece “Error: Last Name is required”.     | 1. Na tela de “Checkout: Your Information”, preencher “First Name” com “Gabriel”<br>2. Deixar “Last Name” vazio<br>3. Preencher “Postal Code” com “01001000”<br>4. Clicar em “Continue”                                                               | A aplicação deve exibir a mensagem “Error: Last Name is required” logo abaixo do campo “Last Name” e impedir o prosseguimento. | Aberto | A mensagem “Error: Last Name is required” aparece, mas, devido ao bug de sobrescrita, não é possível corrigir o campo “Last Name”. |
+---
 
-<small>**Observações gerais**:  
-- Todos os casos de teste acima estão com status “Aberto” pois refletem defeitos identificados durante a execução.  
-- As evidências devem ser coletadas em capturas de tela ou logs de console, indicando o momento exato da falha.  
-- Caso surja a necessidade de testes adicionais (por exemplo, comportamento de inputs vazios ou inputs especiais em outros campos), utilize novos IDs seguindo a mesma numeração sequencial.</small>
+### CT002 – Inserir letras e caracteres especiais no campo CEP durante checkout
+
+| Campo                     | Descrição                                                        |
+|---------------------------|------------------------------------------------------------------|
+| **Requisito**             | RF002                                                            |
+| **Cenário de Teste**      | Garantir que o campo **“Postal Code”** aceite somente números.   |
+| **ID do Caso**            | CT002                                                            |
+| **Objetivo**              |  
+  - Validar que o sistema bloqueie ou rejeite entradas que contenham letras e caracteres especiais no campo CEP. |
+| **Passos**                |  
+  1. Acessar https://www.saucedemo.com e fazer login (usuário **problem_user** / **secret_sauce**).  
+  2. Adicionar ao menos um item ao carrinho.  
+  3. Clicar no ícone do carrinho e depois em **“Checkout”**.  
+  4. Preencher **“First Name”** com **“Gabriel”**.  
+  5. Preencher **“Last Name”** com **“Denti”**.  
+  6. No campo **“Postal Code”**, digitar **“ABC123!@#”**.  
+  7. Clicar em **“Continue”**. |
+| **Resultado Esperado**    |  
+  - O campo **“Postal Code”** aceita apenas dígitos (letras e símbolos são bloqueados ou exibem validação imediata).  
+  - Se o formato estiver incorreto, exibir **“Error: Postal Code is required”** e impedir a continuação. |
+| **Status**                | Falhou                                                          |
+| **Evidências/Observações**|  
+  - O campo aceita letras e caracteres especiais sem validação, permitindo **“ABC123!@#”** e não apresenta mensagem de erro adequada. |
+
+---
+
+### CT003 – Inserir texto nos campos First Name e Last Name para verificar independência
+
+| Campo                     | Descrição                                                        |
+|---------------------------|------------------------------------------------------------------|
+| **Requisito**             | RF003                                                            |
+| **Cenário de Teste**      | Verificar se é possível digitar **“First Name”** e **“Last Name”** sem que um sobrescreva o outro. |
+| **ID do Caso**            | CT003                                                           |
+| **Objetivo**              |  
+  - Garantir que os campos de nome e sobrenome funcionem de forma independente, sem troca ou exclusão de conteúdo. |
+| **Passos**                |  
+  1. Acessar https://www.saucedemo.com e fazer login (usuário **problem_user** / **secret_sauce**).  
+  2. Adicionar ao menos um item ao carrinho e avançar até a página **“Checkout: Your Information”**.  
+  3. No campo **“First Name”**, digitar **“Gabriel”**.  
+  4. No campo **“Last Name”**, digitar **“Denti”**. |
+| **Resultado Esperado**    |  
+  - O campo **“First Name”** mantém o valor **“Gabriel”**.  
+  - O campo **“Last Name”** armazena **“Denti”** sem interferir no campo de nome. |
+| **Status**                | Falhou                                                          |
+| **Evidências/Observações**|  
+  - Ao digitar em **“Last Name”**, o texto sobrescreve o que foi digitado em **“First Name”**; o campo **“Last Name”** permanece vazio. |
+
+---
 
 ### 2.4 Níveis de Criticidade
 
@@ -151,4 +196,5 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 ## 4 – REPORT DE DEFEITO
 
 [Espaço para preenchimento do defeito encontrado seguindo o template acima]
+
 
