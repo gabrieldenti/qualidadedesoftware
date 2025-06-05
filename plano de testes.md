@@ -71,6 +71,8 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **Status**                | Passou / Falhou                                                  |
 | **Evidências/Observações**| Screenshots, logs ou comentários adicionais                      |
 
+## 2.3 Cenários e Casos de Teste
+
 ### CT001 – Remover item adicionado ao carrinho na página de produtos
 
 | Campo                     | Descrição                                                        |
@@ -78,12 +80,11 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **Requisito**             | RF001                                                            |
 | **Cenário de Teste**      | Verificar que, após adicionar um item, é possível removê-lo clicando em “Remove” na página de produtos. |
 | **ID do Caso**            | CT001                                                            |
-| **Objetivo**              |  
-  - Garantir que a remoção de um produto reflita corretamente no botão, no contador e na lista de itens do carrinho. |
-| **Passos**                |  1. Acessar https://www.saucedemo.com e fazer login (usuário **problem_user** / **secret_sauce**).  2. Na lista de produtos, clicar em **“Add to cart”** do produto **“Sauce Labs Bike Light”**.  3. Em seguida, clicar em **“Remove”** para o mesmo produto. |
-| **Resultado Esperado**    |  - O botão do produto volta a exibir **“Add to cart”**.  - O contador do carrinho diminui de **“1”** para **“0”**.  - O produto **“Sauce Labs Bike Light”** deixa de aparecer no carrinho. |
-| **Status**                | Falhou                                                   |
-| **Evidências/Observações**|  - Ao clicar em **“Remove”**, o botão não muda, o contador não decrementa e o produto permanece no carrinho. |
+| **Objetivo**              | Garantir que a remoção de um produto reflita corretamente no botão (“Remove” → “Add to cart”), no contador do carrinho e na lista de itens. |
+| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login (usuário **problem_user** / **secret_sauce**).  <br>2. Na lista de produtos, clicar em **“Add to cart”** do produto **“Sauce Labs Bike Light”**.  <br>3. Em seguida, clicar em **“Remove”** para o mesmo produto. |
+| **Resultado Esperado**    | - O botão do produto volta a exibir **“Add to cart”**.  <br>- O contador do carrinho diminui de “1” para “0”.  <br>- O produto **“Sauce Labs Bike Light”** não aparece mais na lista de itens do carrinho. |
+| **Status**                | Falhou                                                           |
+| **Evidências/Observações**| Ao clicar em **“Remove”**, o botão não muda, o contador não decrementa e o produto permanece no carrinho. |
 
 ---
 
@@ -94,22 +95,11 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **Requisito**             | RF002                                                            |
 | **Cenário de Teste**      | Garantir que o campo **“Postal Code”** aceite somente números.   |
 | **ID do Caso**            | CT002                                                            |
-| **Objetivo**              |  
-  - Validar que o sistema bloqueie ou rejeite entradas que contenham letras e caracteres especiais no campo CEP. |
-| **Passos**                |  
-  1. Acessar https://www.saucedemo.com e fazer login (usuário **problem_user** / **secret_sauce**).  
-  2. Adicionar ao menos um item ao carrinho.  
-  3. Clicar no ícone do carrinho e depois em **“Checkout”**.  
-  4. Preencher **“First Name”** com **“Gabriel”**.  
-  5. Preencher **“Last Name”** com **“Denti”**.  
-  6. No campo **“Postal Code”**, digitar **“ABC123!@#”**.  
-  7. Clicar em **“Continue”**. |
-| **Resultado Esperado**    |  
-  - O campo **“Postal Code”** aceita apenas dígitos (letras e símbolos são bloqueados ou exibem validação imediata).  
-  - Se o formato estiver incorreto, exibir **“Error: Postal Code is required”** e impedir a continuação. |
-| **Status**                | Falhou                                                          |
-| **Evidências/Observações**|  
-  - O campo aceita letras e caracteres especiais sem validação, permitindo **“ABC123!@#”** e não apresenta mensagem de erro adequada. |
+| **Objetivo**              | Validar que o sistema bloqueie ou rejeite entradas que contenham letras e caracteres especiais no campo CEP. |
+| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login (usuário **problem_user** / **secret_sauce**).  <br>2. Adicionar ao menos um item ao carrinho.  <br>3. Clicar no ícone do carrinho e depois em **“Checkout”**.  <br>4. Preencher **“First Name”** com **“Gabriel”** e **“Last Name”** com **“Denti”**.  <br>5. No campo **“Postal Code”**, digitar **“ABC123!@#”**.  <br>6. Clicar em **“Continue”**. |
+| **Resultado Esperado**    | - O campo **“Postal Code”** aceita apenas dígitos (bloquear letras e símbolos).  <br>- Se o formato estiver incorreto, exibir **“Error: Postal Code is required”** e impedir a continuação. |
+| **Status**                | Falhou                                                           |
+| **Evidências/Observações**| O campo aceita letras e caracteres especiais sem validação, permitindo **“ABC123!@#”** e não apresenta mensagem de erro adequada. |
 
 ---
 
@@ -119,20 +109,12 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 |---------------------------|------------------------------------------------------------------|
 | **Requisito**             | RF003                                                            |
 | **Cenário de Teste**      | Verificar se é possível digitar **“First Name”** e **“Last Name”** sem que um sobrescreva o outro. |
-| **ID do Caso**            | CT003                                                           |
-| **Objetivo**              |  
-  - Garantir que os campos de nome e sobrenome funcionem de forma independente, sem troca ou exclusão de conteúdo. |
-| **Passos**                |  
-  1. Acessar https://www.saucedemo.com e fazer login (usuário **problem_user** / **secret_sauce**).  
-  2. Adicionar ao menos um item ao carrinho e avançar até a página **“Checkout: Your Information”**.  
-  3. No campo **“First Name”**, digitar **“Gabriel”**.  
-  4. No campo **“Last Name”**, digitar **“Denti”**. |
-| **Resultado Esperado**    |  
-  - O campo **“First Name”** mantém o valor **“Gabriel”**.  
-  - O campo **“Last Name”** armazena **“Denti”** sem interferir no campo de nome. |
-| **Status**                | Falhou                                                          |
-| **Evidências/Observações**|  
-  - Ao digitar em **“Last Name”**, o texto sobrescreve o que foi digitado em **“First Name”**; o campo **“Last Name”** permanece vazio. |
+| **ID do Caso**            | CT003                                                            |
+| **Objetivo**              | Garantir que os campos de nome e sobrenome funcionem de forma independente, sem troca ou exclusão de conteúdo. |
+| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login (usuário **problem_user** / **secret_sauce**).  <br>2. Adicionar ao menos um item ao carrinho e avançar até a página **“Checkout: Your Information”**.  <br>3. No campo **“First Name”**, digitar **“Gabriel”**.  <br>4. No campo **“Last Name”**, digitar **“Denti”**. |
+| **Resultado Esperado**    | - O campo **“First Name”** mantém o valor **“Gabriel”**.  <br>- O campo **“Last Name”** armazena **“Denti”** sem interferir no campo de nome. |
+| **Status**                | Falhou                                                           |
+| **Evidências/Observações**| Ao digitar em **“Last Name”**, o texto sobrescreve o que foi digitado em **“First Name”**; o campo **“Last Name”** permanece vazio. |
 
 ---
 
