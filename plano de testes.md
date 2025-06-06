@@ -42,14 +42,14 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 
 | Identificador do caso de uso | Nome do caso de uso            |
 |------------------------------|--------------------------------|
-| UC_RemoveFromCart            | Remover item do carrinho       |
+| UC_RemoverDoCarrinho            | Remover item do carrinho       |
 | UC_Checkout                  | Preencher informações de checkout e finalizar pedido |
 
 #### 2.2.2 Requisitos funcionais
 
 | Identificador do requisito | Nome do requisito                                                | Casos de uso relacionados    |
 |----------------------------|------------------------------------------------------------------|------------------------------|
-| RF001                      | Remover item do carrinho                                         | UC_RemoveFromCart            |
+| RF001                      | Remover item do carrinho                                         | UC_RemoveDoCarrinho           |
 | RF002                      | Validar formato do CEP (apenas números)                          | UC_Checkout                  |
 | RF003                      | Validar campos First Name e Last Name (entrada independente)     | UC_Checkout                  |
 
@@ -181,8 +181,133 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 
 ---
 
-## 4 – REPORT DE DEFEITO
+## 4 – REPORT DE DEFEITO [Espaço para preenchimento do defeito encontrado seguindo o template acima]
 
-[Espaço para preenchimento do defeito encontrado seguindo o template acima]
+### Defeito 001
 
+**Título do Bug**: Produto não é removido do carrinho ao clicar em “Remove” na página de produtos  
+**ID**: DFT-001  
+**Reportado por**: Gabriel Denti
+**Data do Relato**: 05/06/2025  
+**Versão do Sistema**: 1.0  
+**Prioridade**: Alta  
+**Severidade**: Alta  
+
+**Descrição**  
+Ao clicar em “Remove” na página de produtos para um item previamente adicionado, o botão não retorna para “Add to cart”, o contador de itens não decrementa e o produto permanece listado no carrinho.
+
+**Para Reproduzir**  
+1. Acessar https://www.saucedemo.com e fazer login com usuário **problem_user** / **secret_sauce”.  
+2. Na página de produtos, clicar em **“Add to cart”** do produto **“Sauce Labs Bike Light”**.  
+3. Retornar à página de produtos e clicar em **“Remove”** no mesmo produto.  
+
+**Resultado Esperado**  
+- Botão volta a exibir **“Add to cart”**.  
+- Contador do carrinho diminui de “1” para “0”.  
+- Produto não aparece mais no carrinho.  
+
+**Resultado Atual**  
+- O botão permanece em **“Remove”**.  
+- Contador continua em “1”.  
+- Produto ainda aparece no carrinho.
+
+**Anexos**  
+[Na pasta deste repositorio, nomeado com o ID do defeito]
+
+**Ambiente de Teste**  
+- **Desktop**: Windows 11, Mozilla Firefox.
+
+**Histórico de Status**  
+- [x] Novo  
+- [ ] Em Análise  
+- [ ] Em Progresso  
+- [ ] Resolvido  
+- [ ] Não Reproduzível  
+- [ ] Rejeitado  
+
+---
+
+### Defeito 002 
+
+**Título do Bug**: Campo “Postal Code” aceita letras e caracteres especiais durante checkout  
+**ID**: DFT-002  
+**Reportado por**: Gabriel Denti 
+**Data do Relato**: 05/06/2025  
+**Versão do Sistema**: 1.0  
+**Prioridade**: Média  
+**Severidade**: Média  
+
+**Descrição**  
+O campo “Postal Code” na página de checkout não valida o formato e aceita entradas como “ABC123!@#”, sem exibir mensagem de erro.
+
+**Para Reproduzir**  
+1. Acessar https://www.saucedemo.com e fazer login com usuário **problem_user** / **secret_sauce”.  
+2. Adicionar item ao carrinho e avançar para “Checkout: Your Information”.  
+3. Preencher **“First Name”** com “Gabriel”, **“Last Name”** com “Denti”.  
+4. No campo **“Postal Code”**, digitar **“ABC123!@#”**.  
+5. Clicar em **“Continue”**.
+
+**Resultado Esperado**  
+- Campo bloqueia caracteres não numéricos ou exibe “Error: Postal Code is required”.  
+- Não permite avançar sem CEP válido.
+
+**Resultado Atual**  
+- Campo aceita “ABC123!@#” sem erro e permite tentar avançar.
+
+**Anexos**  
+[Na pasta deste repositorio, nomeado com o ID do defeito]
+
+**Ambiente de Teste**  
+- **Desktop**: Windows 11, Mozilla Firefox.
+
+**Histórico de Status**  
+- [x] Novo  
+- [ ] Em Análise  
+- [ ] Em Progresso  
+- [ ] Resolvido  
+- [ ] Não Reproduzível  
+- [ ] Rejeitado  
+
+---
+
+### Defeito 003 
+
+**Título do Bug**: Campo “Last Name” sobrescreve conteúdo de “First Name” ao digitar  
+**ID**: DFT-003  
+**Reportado por**: Gabriel Denti
+**Data do Relato**: 05/06/2025  
+**Versão do Sistema**: 1.0  
+**Prioridade**: Alta  
+**Severidade**: Alta  
+
+**Descrição**  
+Na página de checkout, ao digitar no campo “Last Name”, o valor é inserido no campo “First Name”, apagando o nome digitado anteriormente.
+
+**Para Reproduzir**  
+1. Acessar https://www.saucedemo.com e fazer login com usuário **problem_user** / **secret_sauce”.  
+2. Adicionar item ao carrinho e avançar para “Checkout: Your Information”.  
+3. No campo **“First Name”**, digitar “Gabriel”.  
+4. No campo **“Last Name”**, digitar “Denti”.
+
+**Resultado Esperado**  
+- “First Name” mantém “Gabriel”.  
+- “Last Name” armazena “Denti” sem sobrescrever.
+
+**Resultado Atual**  
+- “First Name” fica com “Denti” ou apenas última letra digitada; “Last Name” permanece vazio.
+
+**Anexos**  
+[Na pasta deste repositorio, nomeado com o ID do defeito]
+
+
+**Ambiente de Teste**  
+- **Desktop**: Windows 11, Mozilla Firefox.  
+
+**Histórico de Status**  
+- [x] Novo  
+- [ ] Em Análise  
+- [ ] Em Progresso  
+- [ ] Resolvido  
+- [ ] Não Reproduzível  
+- [ ] Rejeitado  
 
