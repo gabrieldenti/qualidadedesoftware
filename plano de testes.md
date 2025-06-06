@@ -188,7 +188,7 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 **Título do Bug**: Produto não é removido do carrinho ao clicar em “Remove” na página de produtos  
 **ID**: DFT-001  
 **Reportado por**: Gabriel Denti
-**Data do Relato**: 05/06/2025  
+**Data do Relato**:05/06/2025  
 **Versão do Sistema**: 1.0  
 **Prioridade**: Alta  
 **Severidade**: Alta  
@@ -232,7 +232,7 @@ Ao clicar em “Remove” na página de produtos para um item previamente adicio
 **Título do Bug**: Campo “Postal Code” aceita letras e caracteres especiais durante checkout  
 **ID**: DFT-002  
 **Reportado por**: Gabriel Denti 
-**Data do Relato**: 05/06/2025  
+**Data do Relato**:05/06/2025  
 **Versão do Sistema**: 1.0  
 **Prioridade**: Média  
 **Severidade**: Média  
@@ -275,7 +275,7 @@ O campo “Postal Code” na página de checkout não valida o formato e aceita 
 **Título do Bug**: Campo “Last Name” sobrescreve conteúdo de “First Name” ao digitar  
 **ID**: DFT-003  
 **Reportado por**: Gabriel Denti
-**Data do Relato**: 05/06/2025  
+**Data do Relato**:05/06/2025  
 **Versão do Sistema**: 1.0  
 **Prioridade**: Alta  
 **Severidade**: Alta  
