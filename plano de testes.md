@@ -88,7 +88,7 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 
 ---
 
-### CT002 – Inserir letras e caracteres especiais no campo CEP durante checkout
+### CT002 – Inserir letras e caracteres especiais no campo Postal Code durante checkout
 
 | Campo                     | Descrição                                                        |
 |---------------------------|------------------------------------------------------------------|
@@ -96,7 +96,7 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **Cenário de Teste**      | Garantir que o campo **“Postal Code”** aceite somente números.   |
 | **ID do Caso**            | CT002                                                            |
 | **Objetivo**              | Validar que o sistema bloqueie ou rejeite entradas que contenham letras e caracteres especiais no campo CEP. |
-| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login (usuário **problem_user** / **secret_sauce**).  <br>2. Adicionar ao menos um item ao carrinho.  <br>3. Clicar no ícone do carrinho e depois em **“Checkout”**.  <br>4. Preencher **“First Name”** com **“Gabriel”** e **“Last Name”** com **“Denti”**.  <br>5. No campo **“Postal Code”**, digitar **“ABC123!@#”**.  <br>6. Clicar em **“Continue”**. |
+| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login (usuário **standard_user** / **secret_sauce**).  <br>2. Adicionar ao menos um item ao carrinho.  <br>3. Clicar no ícone do carrinho e depois em **“Checkout”**.  <br>4. Preencher **“First Name”** com **“Gabriel”** e **“Last Name”** com **“Denti”**.  <br>5. No campo **“Postal Code”**, digitar **“ABC123!@#”**.  <br>6. Clicar em **“Continue”**. |
 | **Resultado Esperado**    | - O campo **“Postal Code”** aceita apenas dígitos (bloquear letras e símbolos).  <br>- Se o formato estiver incorreto, exibir **“Error: Postal Code is required”** e impedir a continuação. |
 | **Status**                | Falhou                                                           |
 | **Evidências/Observações**| O campo aceita letras e caracteres especiais sem validação, permitindo **“ABC123!@#”** e não apresenta mensagem de erro adequada. |
@@ -241,7 +241,7 @@ Ao clicar em “Remove” na página de produtos para um item previamente adicio
 O campo “Postal Code” na página de checkout não valida o formato e aceita entradas como “ABC123!@#”, sem exibir mensagem de erro.
 
 **Para Reproduzir**  
-1. Acessar https://www.saucedemo.com e fazer login com usuário **problem_user** / **secret_sauce”.  
+1. Acessar https://www.saucedemo.com e fazer login com usuário **standard_user** / **secret_sauce”.  
 2. Adicionar item ao carrinho e avançar para “Checkout: Your Information”.  
 3. Preencher **“First Name”** com “Gabriel”, **“Last Name”** com “Denti”.  
 4. No campo **“Postal Code”**, digitar **“ABC123!@#”**.  
