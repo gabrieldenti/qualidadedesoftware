@@ -1,5 +1,5 @@
 # Plano de Teste
-teste
+
 **Nome do Sistema**: Swag Labs  
 
 **Link do site**: https://www.saucedemo.com  
@@ -302,6 +302,44 @@ Na página de checkout, ao digitar no campo “Last Name”, o valor é inserido
 
 **Ambiente de Teste**  
 - **Desktop**: Windows 11, Mozilla Firefox.  
+
+**Histórico de Status**  
+- [x] Novo  
+- [ ] Em Análise  
+- [ ] Em Progresso  
+- [ ] Resolvido  
+- [ ] Não Reproduzível  
+- [ ] Rejeitado  
+
+### Defeito 004
+
+**Título do Bug**: Produto incorreto é exibido ao clicar em item na página de produtos
+**ID**: DFT-004  
+**Reportado por**: Caio Teixeira
+**Data do Relato**:09/06/2025  
+**Versão do Sistema**: 1.0  
+**Prioridade**: Alta  
+**Severidade**: Alta  
+
+**Descrição**  
+Clicando em qualquer produto na página principal redireciona o usuário para uma página de produto diferente, causando confusão e dificultando a navegação correta entre os itens.
+
+**Para Reproduzir**  
+1. Acessar https://www.saucedemo.com e fazer login com usuário **problem_user** / **secret_sauce”.  
+2. Na página de produtos, clicar em qualquer item, por exemplo: “Sauce Labs Backpack”
+3. Observar o produto exibido na nova página
+
+**Resultado Esperado**  
+Ao clicar em um produto, a página correspondente ao produto clicado deve ser aberta, mostrando nome, descrição e valor corretos.
+
+**Resultado Atual**  
+O sistema redireciona para outro produto aleatório, diferente do que foi clicado.
+
+**Anexos**  
+[Na pasta deste repositorio, nomeado com o ID do defeito DFT-004]
+
+**Ambiente de Teste**  
+- **Desktop**: Windows 11, Google Chrome.
 
 **Histórico de Status**  
 - [x] Novo  
