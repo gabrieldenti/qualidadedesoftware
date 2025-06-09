@@ -4,7 +4,7 @@
 **Link do site**: https://www.saucedemo.com  
 **Data**: 01/06/2025  
 *versão 1.0*  
-*Autores: Gabriel Denti, Caio Teixeira, Laila Covre, Celso*  
+*Autores: Gabriel Denti, Caio Teixeira, Laila Covre, Celso Eloy*  
 
 ---
 
