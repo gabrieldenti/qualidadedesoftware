@@ -207,6 +207,45 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **Status**                | Falhou                                                                                                     |
 | **Evidências/Observações**| Clique não produz efeito: botões não mudam e contador não incrementa.                                     |
 
+### CT010 - Inserir apenas o campo Last Name no checkout
+
+| Campo                     | Descrição                                                        |
+|---------------------------|------------------------------------------------------------------|
+| **Requisito**             | RF010                              |
+| **Cenário de Teste**      | Verificar se o sistema indica quais informações falta ao inserir apenas Last Name                         |
+| **ID do Caso**            | CT010                            |
+| **Objetivo**              | Garantir que o usuário seja informado que faltam First Name e Postal Code para concluir o checkout                            |
+| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login (usuário **standard_user** / **secret_sauce**).<br>2. Selecione o(s) produto(s) e vá para o carrinho.<br>3. Clique no botão de Checkout.<br>4. Preencha o apenas o campo Last Name e clique em Continue.                                   |
+| **Resultado Esperado**    | O sistema deveria retornar a seguinte mensagem de erro “Error: First Name and Postal Code are required”      |
+| **Status**                | Falhou                                                  |
+| **Evidências/Observações**| Vide anexo                    |
+
+
+### CT011 - Inserir apenas o campo First Name no checkout
+
+| Campo                     | Descrição                                                        |
+|---------------------------|------------------------------------------------------------------|
+| **Requisito**             | RF011                              |
+| **Cenário de Teste**      | Verificar se o sistema indica quais informações falta ao inserir apenas First Name                         |
+| **ID do Caso**            | CT011                            |
+| **Objetivo**              | Garantir que o usuário seja informado que faltam Last Name e Postal Code para concluir o checkout                            |
+| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login (usuário **standard_user** / **secret_sauce**).<br>2. Selecione o(s) produto(s) e vá para o carrinho.<br>3. Clique no botão de Checkout.<br>4. Preencha o apenas o campo First Name e clique em Continue.                                   |
+| **Resultado Esperado**    | O sistema deveria retornar a seguinte mensagem de erro “Error: Last Name and Postal Code are required”      |
+| **Status**                | Falhou                                                  |
+| **Evidências/Observações**| Vide anexo                    |
+
+### CT012 - Inserir apenas o campo Postal Code no checkout
+
+| Campo                     | Descrição                                                        |
+|---------------------------|------------------------------------------------------------------|
+| **Requisito**             | RF012                              |
+| **Cenário de Teste**      | Verificar se o sistema indica quais informações falta ao inserir apenas Postal Code                         |
+| **ID do Caso**            | CT012                            |
+| **Objetivo**              | Garantir que o usuário seja informado que faltam First Name e Postal Codee  para concluir o checkout                            |
+| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login (usuário **standard_user** / **secret_sauce**).<br>2. Selecione o(s) produto(s) e vá para o carrinho.<br>3. Clique no botão de Checkout.<br>4. Preencha o apenas o campo Postal Code e clique em Continue.                                   |
+| **Resultado Esperado**    | O sistema deveria retornar a seguinte mensagem de erro “Error: First Name and Last Name are required”      |
+| **Status**                | Falhou                                                  |
+| **Evidências/Observações**| Vide anexo                    |
 ---
 
 ### 2.4 Níveis de Criticidade
