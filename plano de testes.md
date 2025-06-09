@@ -117,6 +117,37 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **Evidências/Observações**| Ao digitar em **“Last Name”**, o texto sobrescreve o que foi digitado em **“First Name”**; o campo **“Last Name”** permanece vazio. |
 
 ---
+### CT007 – Inserir texto nos campos First Name e Last Name para verificar independência
+
+| Campo                     | Descrição                                                        |
+|---------------------------|------------------------------------------------------------------|
+| **Requisito**             | RF007                                                            |
+| **Cenário de Teste**      | Verificar se ao clicar em um item na listagem de produtos, o sistema redireciona corretamente para a página do item selecionado.|
+| **ID do Caso**            | CT007                                                            |
+| **Objetivo**              | Garantir que o produto clicado na listagem leve à sua própria página de detalhes, exibindo nome, descrição e preço corretos.|
+| **Passos**                |	1. Acessar https://www.saucedemo.com e fazer login com **"problem_user"**.
+2. Na página de produtos, clicar no item “Sauce Labs Backpack”.
+| **Resultado Esperado**    | - A página de detalhes exibida deve conter as informações corretas do produto “Sauce Labs Backpack”.
+| **Status**                | Falhou                                                           |
+| **Evidências/Observações**| Produto incorreto é exibido (por exemplo, “Sauce Labs Fleece Jacket” aparece ao clicar em “Sauce Labs Backpack”).
+
+---
+
+### CT008 – Inserir texto nos campos First Name e Last Name para verificar independência
+
+| Campo                     | Descrição                                                        |
+|---------------------------|------------------------------------------------------------------|
+| **Requisito**             | RF008                                                            |
+| **Cenário de Teste**      | Testar se o filtro por categoria exibe corretamente os produtos relacionados.|
+| **ID do Caso**            | CT008                                                           |
+| **Objetivo**              |Garantir que a filtragem por categoria funciona corretamente.|
+| **Passos**                |	1. Acessar https://www.saucedemo.com e fazer login com **"problem_user"**.
+2. Na página de produtos, selecionar uma categoria no filtro
+3. Verificar que somente os produtos daquela categoria são exibidos
+| **Resultado Esperado**    | - A página deve exibir apenas produtos da categoria selecionada.
+| **Status**                | Falhou                                                           |
+| **Evidências/Observações**| Produto incorreto é exibido (por exemplo,selecionei o filtro por preço, porém permaneceu filtrado por ordem alfabetica).
+
 
 ### 2.4 Níveis de Criticidade
 
@@ -446,7 +477,7 @@ O sistema deve retornar os produtos correspondentes ao termo pesquisado.
 ### Defeito 007
 
 **Título do Bug**: Produto incorreto é exibido ao clicar em item na página de produtos  
-**ID**: DFT-004   
+**ID**: DFT-007   
 **Reportado por**: Caio Teixeira  
 **Data do Relato**:09/06/2025  
 **Versão do Sistema**: 1.0  
