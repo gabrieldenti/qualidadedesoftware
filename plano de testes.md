@@ -162,7 +162,7 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 5. Observar se o botão muda para **"Remove"** e o contador do carrinho é incrementado
 | **Resultado Esperado**    | -  O botão muda para “Remove” após o clique
 - O contador do carrinho é incrementado corretamente
-- Os produtos são adicionados ao carrinho com sucesso
+- Os produtos são adicionados ao carrinho com sucesso |
 | **Status**                | Falhou                                                           |
 | **Evidências/Observações**| O clique em "Add to cart" não produz efeito: o botão não muda, o item não é adicionado ao carrinho e nenhuma ação visível ocorre.
 
