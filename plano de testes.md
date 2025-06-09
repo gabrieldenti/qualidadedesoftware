@@ -481,13 +481,13 @@ O sistema redireciona para outro produto aleatório, diferente do que foi clicad
 
 ### Defeito 008 
 
-**Título do Bug**: Filtros da lista não aplicam alterações
-**ID**: DFT-008
-**Reportado por**: Caio Teixeira
-**Data do Relato**:05/06/2025 
-**Versão do Sistema**: 1.0
-**Prioridade**: Alta
-**Severidade**: Média
+**Título do Bug**: Filtros da lista não aplicam alterações  
+**ID**: DFT-008  
+**Reportado por**: Caio Teixeira  
+**Data do Relato**:05/06/2025   
+**Versão do Sistema**: 1.0  
+**Prioridade**: Alta  
+**Severidade**: Média  
 
 **Descrição**  
 Na tela onde há filtros para visualização de registros, ao alterar qualquer filtro, a lista não é atualizada. O sistema ignora a ação do usuário, permanecendo com o conteúdo anterior.
