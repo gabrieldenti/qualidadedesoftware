@@ -477,10 +477,10 @@ O sistema redireciona para outro produto aleatório, diferente do que foi clicad
 - [ ] Não Reproduzível  
 - [ ] Rejeitado  
 
-### Defeito 005 
+### Defeito 008 
 
 **Título do Bug**: Filtros da lista não aplicam alterações
-**ID**: DFT-005  
+**ID**: DFT-008  
 **Reportado por**: Caio Teixeira
 **Data do Relato**:05/06/2025  
 **Versão do Sistema**: 1.0  
