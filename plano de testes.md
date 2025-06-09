@@ -117,6 +117,52 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **Evidências/Observações**| Ao digitar em **“Last Name”**, o texto sobrescreve o que foi digitado em **“First Name”**; o campo **“Last Name”** permanece vazio. |
 
 ---
+
+### CT004 – Clicar em um produto para verificar a sua descrição
+
+| Campo                     | Descrição                                                        |
+|---------------------------|------------------------------------------------------------------|
+| **Requisito**             | RF004                                                            |
+| **Cenário de Teste**      | Verificar se a descrição do produto se encontra disponível na página do produto. |
+| **ID do Caso**            | CT004                                                            |
+| **Objetivo**              | Garantir que a descrição do produto esteja válida após entrar na página do produto. |
+| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login (usuário **errro_user** / **secret_sauce**).  <br>2. clicar em um produto na página inicial.  <br>3. Verificar se possui a mesma ou alguma descrição sobre o produto.   |
+| **Resultado Esperado**    | - A descrição do produto esteja disponível após clicar na página. |
+| **Status**                | Falhou                                                           |
+| **Evidências/Observações**| A descrição é contrária ao do produto em questão. |
+
+---
+
+### CT005 – disponibilizar check-out sem a inclusão de produtos no carrinho
+
+| Campo                     | Descrição                                                        |
+|---------------------------|------------------------------------------------------------------|
+| **Requisito**             | RF005                                                            |
+| **Cenário de Teste**      | Verificar se é possível realizar o check-out não contendo produtos no carrinho. |
+| **ID do Caso**            | CT005                                                            |
+| **Objetivo**              | Garantir que a compra não seja realizada sem a inclusão de produtos no carinho. |
+| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login (usuário **performance_glitch_user** / **secret_sauce**).  <br>2. Não adicionar itens ao carrinho   <br>3. Ir para o carrinho e clicar em **checkout** <br>4. Adicionar seu **First Name**, **Last Name** e **Zip Code**. <br5> Clicar em **continuar** e logo depois em **Finish**.  |
+| **Resultado Esperado**    | - A compra não poderá ser realizada pelo site quando não possuir itens no carrinho. |
+| **Status**                | Falhou                                                           |
+| **Evidências/Observações**| Com o carrinho vazio é possível seguir para o checktout e realizar uma compra. |
+
+---
+
+### CT006 – Inserir o campo **Last Name** no checkout
+
+| Campo                     | Descrição                                                        |
+|---------------------------|------------------------------------------------------------------|
+| **Requisito**             | RF006                                                            |
+| **Cenário de Teste**      | Verificar se é digitar o campo **Last Name** no checkout. |
+| **ID do Caso**            | CT006                                                            |
+| **Objetivo**              | Garantir que o campo de sobrenome esteja disponível para edição. |
+| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login (usuário **error_user** / **secret_sauce**).  <br>2. Adicionar ao menos um item ao carrinho e avançar até a página **“Checkout: Your Information”**.  <br>3. No campo **“First Name”**, digitar **“Laila”**.  <br>4. No campo **“Last Name”**, digitar **“Covre”**. |
+| **Resultado Esperado**    | - O campo **“First Name”** mantém o valor **“Laila”**.  <br>- O campo **“Last Name”** não armazena e não possibilita a edição do nome. |
+| **Status**                | Falhou                                                           |
+| **Evidências/Observações**| Ao digitar em **“Last Name”**, a caixa de texto não tem possibilidade de escrita ou armazenamento.|
+
+---
+
 ### CT007 – Redirecionamento ao clicar em item da listagem de produtos
 
 | Campo                     | Descrição                                                        |
@@ -125,7 +171,7 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **Cenário de Teste**      | Verificar se ao clicar em um item na listagem de produtos, o sistema redireciona corretamente para a página do item selecionado.|
 | **ID do Caso**            | CT007                                                            |
 | **Objetivo**              | Garantir que o produto clicado na listagem leve à sua própria página de detalhes, exibindo nome, descrição e preço corretos.|
-| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login com **"problem_user"**. <br>2. Na página de produtos, clicar no item **“Sauce Labs Backpack”**. |
+| **Passos**                |	1. Acessar https://www.saucedemo.com e fazer login com **"problem_user"**. 2. Na página de produtos, clicar no item “Sauce Labs Backpack”. |
 | **Resultado Esperado**    | - A página de detalhes exibida deve conter as informações corretas do produto “Sauce Labs Backpack”.
 | **Status**                | Falhou                                                           |
 | **Evidências/Observações**| Produto incorreto é exibido (por exemplo, “Sauce Labs Fleece Jacket” aparece ao clicar em “Sauce Labs Backpack”).
@@ -140,7 +186,7 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **Cenário de Teste**      | Testar se o filtro por categoria exibe corretamente os produtos relacionados.|
 | **ID do Caso**            | CT008                                                           |
 | **Objetivo**              |Garantir que a filtragem por categoria funciona corretamente.|
-| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login com **"problem_user"**. <br>2. Na página de produtos, selecionar uma categoria no filtro. <br>3. Verificar que somente os produtos daquela categoria são exibidos. |
+| **Passos**                |	1. Acessar https://www.saucedemo.com e fazer login com **"problem_user"**. 2. Na página de produtos, selecionar uma categoria no filtro 3. Verificar que somente os produtos daquela categoria são exibidos |
 | **Resultado Esperado**    | - A página deve exibir apenas produtos da categoria selecionada.
 | **Status**                | Falhou                                                           |
 | **Evidências/Observações**| Produto incorreto é exibido (por exemplo,selecionei o filtro por preço, porém permaneceu filtrado por ordem alfabetica).
@@ -153,7 +199,7 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **Cenário de Teste**      |Verificar se o botão "Add to cart" está funcionando corretamente para todos os produtos na tela inicial.|
 | **ID do Caso**            | CT009                                                          |
 | **Objetivo**              |	Garantir que os produtos podem ser adicionados ao carrinho a partir da tela principal.|
-| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login com **"problem_user"**. <br>2. Na página de produtos, localizar os seguintes itens: **"Test.allTheThings() T-Shirt (Red)"**, **"Sauce Labs Fleece Jacket"**, **"Sauce Labs Bolt T-Shirt"**. <br>3. Clicar em **"Add to cart"** para cada um deles. <br>4. Observar se o botão muda para **"Remove"** e o contador do carrinho é incrementado. |
+| **Passos**                |	1. Acessar https://www.saucedemo.com e fazer login com **"problem_user"**. 2. Na página de produtos, selecionar uma categoria no filtro 3. Localizar os seguintes itens: **"Test.allTheThings() T-Shirt (Red)"** **"Sauce Labs Fleece Jacket"** **"Sauce Labs Bolt T-Shirt"** 4. Clicar em "Add to cart" para cada um deles 5. Observar se o botão muda para **"Remove"** e o contador do carrinho é incrementado |
 | **Resultado Esperado**    | -  O botão muda para “Remove” após o clique - O contador do carrinho é incrementado corretamente - Os produtos são adicionados ao carrinho com sucesso |
 | **Status**                | Falhou                                                           |
 | **Evidências/Observações**| O clique em "Add to cart" não produz efeito: o botão não muda, o item não é adicionado ao carrinho e nenhuma ação visível ocorre. |
@@ -356,7 +402,7 @@ Na página de checkout, ao digitar no campo “Last Name”, o valor é inserido
 
 ### Defeito 004 
 
-**Título do Bug**: Página de Checkout permite avançar mesmo com campos obrigatórios vazios
+**Título do Bug**: Ao clicar em um produto, a descrição do mesmo está incorreta
 **ID**: DFT-004
 **Reportado por**: Laila Covre
 **Data do Relato**: 06/06/2025
@@ -365,32 +411,28 @@ Na página de checkout, ao digitar no campo “Last Name”, o valor é inserido
 **Severidade**: Crítica
 
 **Descrição**
-O sistema permite que o usuário avance para a próxima etapa do checkout mesmo sem preencher os campos obrigatórios “First Name”, “Last Name” e “Postal Code”.
+A descrição do produto fica indisponível assim que o usuário clica no produto e entra na sua página.
 
 **Para Reproduzir**
 
-Acessar https://www.saucedemo.com e fazer login com usuário standard_user / secret_sauce
+Acessar https://www.saucedemo.com e fazer login com usuário **error_user** / **secret_sauce**
 
-Adicionar qualquer produto ao carrinho
-
-Ir para o carrinho e clicar em Checkout
-
-Deixar todos os campos em branco e clicar em Continue
+Clicar em um produto na página inicial
 
 **Resultado Esperado**
 
-Sistema bloqueia o avanço e exibe mensagens de erro para os campos obrigatórios não preenchidos.
+A descrição correta do produto está disponível
 
 **Resultado Atual**
 
-O sistema permite avançar mesmo com todos os campos em branco.
+O produto está sem descrição
 
 **Anexos**
 [Na pasta deste repositório, nomeado com o ID do defeito]
 
 **Ambiente de Teste**
 
-Desktop: Windows 11, Google Chrome
+Desktop: Windows 10, Google Chrome
 
 **Histórico de Status**
 
@@ -408,7 +450,7 @@ Desktop: Windows 11, Google Chrome
 
 ### Defeito 005 
 
-**Título do Bug**: Ícone do carrinho não atualiza corretamente após remoção de itens
+**Título do Bug**: Check out disponível sem itens no carrinho
 **ID**: DFT-005
 **Reportado por**: Laila Covre
 **Data do Relato**: 06/06/2025
@@ -417,32 +459,32 @@ Desktop: Windows 11, Google Chrome
 **Severidade**: Média
 
 **Descrição**
-Após remover um item do carrinho, o contador do ícone no canto superior direito permanece com a contagem anterior.
+
+O sistema possibilita a realização do checkout sem a inclusão de itens no carrinho
 
 **Para Reproduzir**
 
-Acessar https://www.saucedemo.com e fazer login com usuário standard_user / secret_sauce
+Acessar https://www.saucedemo.com e fazer login com usuário **performance_glitch_user** / **secret_sauce**
 
-Adicionar dois produtos ao carrinho
+clicar no carrinho vazio e avaçar para o check out
 
-Remover um produto
+inserir os dados e finalizar
 
-Observar o ícone do carrinho no topo da página
 
 **Resultado Esperado**
 
-O contador do carrinho deve atualizar automaticamente e refletir o número atual de itens.
+O sistemas deve impedir a realização do checkout
 
 **Resultado Atual**
 
-O número no ícone continua igual ao anterior, mesmo após a remoção do item.
+O sistema finaliza a compra
 
 **Anexos**
 [Na pasta deste repositório, nomeado com o ID do defeito]
 
 Ambiente de Teste
 
-Desktop: Windows 11, Microsoft Edge
+Desktop: Windows 10, Google Chrome
 
 **Histórico de Status**
 
@@ -461,7 +503,7 @@ Desktop: Windows 11, Microsoft Edge
 
 ### Defeito 006
 
-**Título do Bug**: Campo de busca não retorna resultados relevantes
+**Título do Bug**: O campo **Last Name** é impossibilitado de edições na aba checkout
 **ID**: DFT-006
 **Reportado por**: Laila Covre
 **Data do Relato**: 06/06/2025
@@ -470,20 +512,44 @@ Desktop: Windows 11, Microsoft Edge
 **Severidade**: Baixa
 
 **Descrição**
-Ao buscar termos como “bike” ou “light”, que fazem parte do nome de produtos disponíveis, nenhum resultado é retornado.
+Ao realizar o checkout o campo **Last Name** impossibilita o usuário de digitar seu sobrenome.
 
 **Para Reproduzir**
 
-Acessar https://www.saucedemo.com e fazer login com usuário standard_user / secret_sauce
+Acessar https://www.saucedemo.com e fazer login com usuário **error_user** / **secret_sauce**
 
-Usar o campo de busca (se disponível) e digitar termos como “bike” ou “light”
+Adicionar um item ao carrinho e realizar o check out
+
+Adicionar os dados de nome e sobrenome e zip code.
 
 **Resultado Esperado**
 
-O sistema deve retornar os produtos correspondentes ao termo pesquisado.
+O sistema deve armazenar o sobrenome inserido.
 
 **Resultado Atual**
 
+O sistema não armazena ou possibilita a edição do sobrenome.
+
+**Anexos**
+[Na pasta deste repositório, nomeado com o ID do defeito]
+
+Ambiente de Teste
+
+Desktop: Windows 10, Google Chrome
+
+**Histórico de Status**
+
+- [x] Novo
+
+- [ ] Em Análise
+
+- [ ] Em Progresso
+
+- [ ] Resolvido
+
+- [ ] Não Reproduzível
+
+- [ ] Rejeitado
 
 ### Defeito 007
 
