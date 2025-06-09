@@ -50,9 +50,11 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 |----------------------------|---------------------------------------------------------------------------|---------------------------|
 | RF001                      | Remover item do carrinho                                                  | UC_RemoveDoCarrinho      |
 | RF002                      | Validar formato do CEP (apenas números)                                   | UC_Checkout              |
-| RF003                      | Validar campos First Name e Last Name (entrada independente)              | UC_Checkout              |
+| RF003                      | Validar campos First Name e Last Name                                     | UC_Checkout              |
+| RF005                      | Impedir checkout sem itens no carrinho                                    | UC_Checkout              |
+| RF006                      | Permitir edição independente do campo Last Name no checkout               | UC_Checkout              |
 | RF007                      | Redirecionar corretamente à página de detalhes do produto clicado         | UC_NavegarParaDetalhes   |
-| RF008                      | Filtrar corretamente os produtos por categoria selecionada               | UC_FiltrarProdutos       |
+| RF008                      | Filtrar corretamente os produtos por categoria selecionada                | UC_FiltrarProdutos       |
 | RF009                      | Adicionar itens ao carrinho pela tela de listagem e atualizar o contador  | UC_AdicionarAoCarrinho   |
 
 ---
@@ -153,7 +155,7 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 
 | Campo                     | Descrição                                                                                                  |
 |---------------------------|------------------------------------------------------------------------------------------------------------|
-| **Requisito**             | RF003                                                                                                     |
+| **Requisito**             | RF006                                                                                                     |
 | **Cenário de Teste**      | Verificar se o campo **Last Name** está disponível para edição no checkout.                                |
 | **ID do Caso**            | CT006                                                                                                     |
 | **Objetivo**              | Garantir que o campo de sobrenome possa ser preenchido corretamente.                                       |
@@ -207,45 +209,51 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **Status**                | Falhou                                                                                                     |
 | **Evidências/Observações**| Clique não produz efeito: botões não mudam e contador não incrementa.                                     |
 
+---
+
 ### CT010 - Inserir apenas o campo Last Name no checkout
 
 | Campo                     | Descrição                                                        |
 |---------------------------|------------------------------------------------------------------|
-| **Requisito**             | RF010                              |
+| **Requisito**             | RF003                              |
 | **Cenário de Teste**      | Verificar se o sistema indica quais informações falta ao inserir apenas Last Name                         |
 | **ID do Caso**            | CT010                            |
 | **Objetivo**              | Garantir que o usuário seja informado que faltam First Name e Postal Code para concluir o checkout                            |
 | **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login (usuário **standard_user** / **secret_sauce**).<br>2. Selecione o(s) produto(s) e vá para o carrinho.<br>3. Clique no botão de Checkout.<br>4. Preencha o apenas o campo Last Name e clique em Continue.                                   |
 | **Resultado Esperado**    | O sistema deveria retornar a seguinte mensagem de erro “Error: First Name and Postal Code are required”      |
 | **Status**                | Falhou                                                  |
-| **Evidências/Observações**| Vide anexo                    |
+| **Evidências/Observações**| Video em anexo                   |
 
+---
 
 ### CT011 - Inserir apenas o campo First Name no checkout
 
 | Campo                     | Descrição                                                        |
 |---------------------------|------------------------------------------------------------------|
-| **Requisito**             | RF011                              |
+| **Requisito**             | RF003                             |
 | **Cenário de Teste**      | Verificar se o sistema indica quais informações falta ao inserir apenas First Name                         |
 | **ID do Caso**            | CT011                            |
 | **Objetivo**              | Garantir que o usuário seja informado que faltam Last Name e Postal Code para concluir o checkout                            |
 | **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login (usuário **standard_user** / **secret_sauce**).<br>2. Selecione o(s) produto(s) e vá para o carrinho.<br>3. Clique no botão de Checkout.<br>4. Preencha o apenas o campo First Name e clique em Continue.                                   |
 | **Resultado Esperado**    | O sistema deveria retornar a seguinte mensagem de erro “Error: Last Name and Postal Code are required”      |
 | **Status**                | Falhou                                                  |
-| **Evidências/Observações**| Vide anexo                    |
+| **Evidências/Observações**| Video em anexo                    |
+
+---
 
 ### CT012 - Inserir apenas o campo Postal Code no checkout
 
 | Campo                     | Descrição                                                        |
 |---------------------------|------------------------------------------------------------------|
-| **Requisito**             | RF012                              |
+| **Requisito**             | RF003                              |
 | **Cenário de Teste**      | Verificar se o sistema indica quais informações falta ao inserir apenas Postal Code                         |
 | **ID do Caso**            | CT012                            |
 | **Objetivo**              | Garantir que o usuário seja informado que faltam First Name e Postal Codee  para concluir o checkout                            |
 | **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login (usuário **standard_user** / **secret_sauce**).<br>2. Selecione o(s) produto(s) e vá para o carrinho.<br>3. Clique no botão de Checkout.<br>4. Preencha o apenas o campo Postal Code e clique em Continue.                                   |
 | **Resultado Esperado**    | O sistema deveria retornar a seguinte mensagem de erro “Error: First Name and Last Name are required”      |
 | **Status**                | Falhou                                                  |
-| **Evidências/Observações**| Vide anexo                    |
+| **Evidências/Observações**| Video em anexo                    |
+
 ---
 
 ### 2.4 Níveis de Criticidade
