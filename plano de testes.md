@@ -187,7 +187,7 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 
 **Título do Bug**: Produto não é removido do carrinho ao clicar em “Remove” na página de produtos  
 **ID**: DFT-001  
-**Reportado por**: Gabriel Denti
+**Reportado por**: Gabriel Denti  
 **Data do Relato**:05/06/2025  
 **Versão do Sistema**: 1.0  
 **Prioridade**: Alta  
@@ -231,7 +231,7 @@ Ao clicar em “Remove” na página de produtos para um item previamente adicio
 
 **Título do Bug**: Campo “Postal Code” aceita letras e caracteres especiais durante checkout  
 **ID**: DFT-002  
-**Reportado por**: Gabriel Denti 
+**Reportado por**: Gabriel Denti   
 **Data do Relato**:05/06/2025  
 **Versão do Sistema**: 1.0  
 **Prioridade**: Média  
@@ -273,12 +273,12 @@ O campo “Postal Code” na página de checkout não valida o formato e aceita 
 ### Defeito 003 
 
 **Título do Bug**: Campo “Last Name” sobrescreve conteúdo de “First Name” ao digitar.  
-**ID**: DFT-003.
-**Reportado por**: Gabriel Denti.
-**Data do Relato**:05/06/2025. 
+**ID**: DFT-003  
+**Reportado por**: Gabriel Denti  
+**Data do Relato**:05/06/2025  
 **Versão do Sistema**: 1.0  
-**Prioridade**: Alta
-**Severidade**: Alta
+**Prioridade**: Alta  
+**Severidade**: Alta  
 
 **Descrição**  
 Na página de checkout, ao digitar no campo “Last Name”, o valor é inserido no campo “First Name”, apagando o nome digitado anteriormente.
@@ -312,7 +312,8 @@ Na página de checkout, ao digitar no campo “Last Name”, o valor é inserido
 - [ ] Rejeitado  
 
 
-**Defeito 004**
+### Defeito 004 
+
 **Título do Bug**: Página de Checkout permite avançar mesmo com campos obrigatórios vazios
 **ID**: DFT-004
 **Reportado por**: Laila Covre
@@ -363,7 +364,8 @@ Desktop: Windows 11, Google Chrome
 
 - [ ] Rejeitado
 
-**Defeito 005**
+### Defeito 005 
+
 **Título do Bug**: Ícone do carrinho não atualiza corretamente após remoção de itens
 **ID**: DFT-005
 **Reportado por**: Laila Covre
@@ -443,13 +445,13 @@ O sistema deve retornar os produtos correspondentes ao termo pesquisado.
 
 ### Defeito 007
 
-**Título do Bug**: Produto incorreto é exibido ao clicar em item na página de produtos
-**ID**: DFT-004 
-**Reportado por**: Caio Teixeira
-**Data do Relato**:09/06/2025
-**Versão do Sistema**: 1.0
-**Prioridade**: Alta 
-**Severidade**: Alta
+**Título do Bug**: Produto incorreto é exibido ao clicar em item na página de produtos  
+**ID**: DFT-004   
+**Reportado por**: Caio Teixeira  
+**Data do Relato**:09/06/2025  
+**Versão do Sistema**: 1.0  
+**Prioridade**: Alta   
+**Severidade**: Alta  
 
 **Descrição**  
 Clicando em qualquer produto na página principal redireciona o usuário para uma página de produto diferente, causando confusão e dificultando a navegação correta entre os itens.
