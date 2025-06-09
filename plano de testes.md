@@ -352,8 +352,7 @@ O campo “Postal Code” na página de checkout não valida o formato e aceita 
 - [Na pasta do repositório, nomeado DFT-002]
 
 **Ambiente de Teste**  
-- **Desktop**: Windows 10, Mozilla Firefox 102.0  
-- **Mobile**: iOS 15, Safari Mobile  
+- **Desktop**: Windows 11, Mozilla Firefox   
 
 **Histórico de Status**  
 - [x] Novo  
@@ -396,8 +395,7 @@ Ao digitar no campo “Last Name”, o conteúdo previamente inserido em “Firs
 - [Na pasta do repositório, nomeado DFT-003]
 
 **Ambiente de Teste**  
-- **Desktop**: macOS Monterey, Google Chrome 113.0  
-- **Mobile**: Android 11, Chrome Mobile  
+- **Desktop**: Windows 11, Mozilla Firefox  
 
 **Histórico de Status**  
 - [x] Novo  
