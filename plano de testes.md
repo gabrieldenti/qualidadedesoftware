@@ -179,7 +179,7 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **Cenário de Teste**      | Verificar se ao clicar em um item na listagem de produtos, o sistema redireciona corretamente para a página do item selecionado.|
 | **ID do Caso**            | CT007                                                            |
 | **Objetivo**              | Garantir que o produto clicado na listagem leve à sua própria página de detalhes, exibindo nome, descrição e preço corretos.|
-| **Passos**                |	1. Acessar https://www.saucedemo.com e fazer login com **"problem_user"**. 2. Na página de produtos, clicar no item “Sauce Labs Backpack”. |
+| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login com **"problem_user"**. <br>2. Na página de produtos, clicar no item **“Sauce Labs Backpack”**. |
 | **Resultado Esperado**    | - A página de detalhes exibida deve conter as informações corretas do produto “Sauce Labs Backpack”.
 | **Status**                | Falhou                                                           |
 | **Evidências/Observações**| Produto incorreto é exibido (por exemplo, “Sauce Labs Fleece Jacket” aparece ao clicar em “Sauce Labs Backpack”).
