@@ -194,7 +194,7 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **Cenário de Teste**      | Testar se o filtro por categoria exibe corretamente os produtos relacionados.|
 | **ID do Caso**            | CT008                                                           |
 | **Objetivo**              |Garantir que a filtragem por categoria funciona corretamente.|
-| **Passos**                |	1. Acessar https://www.saucedemo.com e fazer login com **"problem_user"**. 2. Na página de produtos, selecionar uma categoria no filtro 3. Verificar que somente os produtos daquela categoria são exibidos |
+| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login com **"problem_user"**. <br>2. Na página de produtos, selecionar uma categoria no filtro. <br>3. Verificar que somente os produtos daquela categoria são exibidos. |
 | **Resultado Esperado**    | - A página deve exibir apenas produtos da categoria selecionada.
 | **Status**                | Falhou                                                           |
 | **Evidências/Observações**| Produto incorreto é exibido (por exemplo,selecionei o filtro por preço, porém permaneceu filtrado por ordem alfabetica).
@@ -207,7 +207,7 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **Cenário de Teste**      |Verificar se o botão "Add to cart" está funcionando corretamente para todos os produtos na tela inicial.|
 | **ID do Caso**            | CT009                                                          |
 | **Objetivo**              |	Garantir que os produtos podem ser adicionados ao carrinho a partir da tela principal.|
-| **Passos**                |	1. Acessar https://www.saucedemo.com e fazer login com **"problem_user"**. 2. Na página de produtos, selecionar uma categoria no filtro 3. Localizar os seguintes itens: **"Test.allTheThings() T-Shirt (Red)"** **"Sauce Labs Fleece Jacket"** **"Sauce Labs Bolt T-Shirt"** 4. Clicar em "Add to cart" para cada um deles 5. Observar se o botão muda para **"Remove"** e o contador do carrinho é incrementado |
+| **Passos**                | 1. Acessar https://www.saucedemo.com e fazer login com **"problem_user"**. <br>2. Na página de produtos, localizar os seguintes itens: **"Test.allTheThings() T-Shirt (Red)"**, **"Sauce Labs Fleece Jacket"**, **"Sauce Labs Bolt T-Shirt"**. <br>3. Clicar em **"Add to cart"** para cada um deles. <br>4. Observar se o botão muda para **"Remove"** e o contador do carrinho é incrementado. |
 | **Resultado Esperado**    | -  O botão muda para “Remove” após o clique - O contador do carrinho é incrementado corretamente - Os produtos são adicionados ao carrinho com sucesso |
 | **Status**                | Falhou                                                           |
 | **Evidências/Observações**| O clique em "Add to cart" não produz efeito: o botão não muda, o item não é adicionado ao carrinho e nenhuma ação visível ocorre. |
