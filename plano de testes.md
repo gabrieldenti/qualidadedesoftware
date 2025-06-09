@@ -155,7 +155,7 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 
 | Campo                     | Descrição                                                                                                  |
 |---------------------------|------------------------------------------------------------------------------------------------------------|
-| **Requisito**             | RF006                                                                                                     |
+| **Requisito**             | RF003                                                                                                     |
 | **Cenário de Teste**      | Verificar se o campo **Last Name** está disponível para edição no checkout.                                |
 | **ID do Caso**            | CT006                                                                                                     |
 | **Objetivo**              | Garantir que o campo de sobrenome possa ser preenchido corretamente.                                       |
