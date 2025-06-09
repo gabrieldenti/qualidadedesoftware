@@ -746,7 +746,7 @@ Versão do Sistema: 1.0
 Prioridade: baixa
 Severidade: media
 **Descrição:**
-Mensagem de erro inválida é exibida quando o usuário quer fazer checkout apenas com o First Name preenchido
+Mensagem de erro inválida é exibida quando o usuário quer fazer checkout apenas com o Postal Code preenchido
 
 **Para Reproduzir:**
 -	Usuario logou como standard_user
