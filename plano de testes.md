@@ -274,7 +274,6 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 
 ## 4 – REPORT DE DEFEITO (Espaço para preenchimento)
 
-## 3 – REPORT DE DEFEITOS
 
 ---
 
