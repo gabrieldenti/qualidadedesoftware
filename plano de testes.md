@@ -520,4 +520,50 @@ Na tela onde há filtros para visualização de registros, ao alterar qualquer f
 - [ ] Não Reproduzível  
 - [ ] Rejeitado  
 
+### Defeito 009 
+
+**Título do Bug**: Itens não são adicionados ao carrinho na tela inicial.
+**ID**: DFT-009  
+**Reportado por**: Caio Teixeira  
+**Data do Relato**:05/06/2025   
+**Versão do Sistema**: 1.0  
+**Prioridade**: Alta  
+**Severidade**: Alta  
+
+**Descrição**  
+Na página inicial onde são exibidos todos os produtos, ao clicar em "Add to cart" para determinados itens, nada acontece. A ação é ignorada e os produtos não são adicionados ao carrinho.
+
+**Itens afetados**  
+-Test.allTheThings() T-Shirt (Red)
+-Sauce Labs Fleece Jacket
+-Sauce Labs Bolt T-Shirt
+
+**Para Reproduzir**  
+1. Acessar https://www.saucedemo.com e fazer login com usuário **problem_user** / **secret_sauce”.  
+2. Na página inicial com os produtos, localizar um dos itens afetados.
+3. Clicar em "Add to cart".
+4. Verificar se o contador do carrinho é incrementado ou se o botão muda para "Remove".
+
+**Resultado Esperado**  
+- O botão deve mudar para “Remove”.
+- O contador do carrinho deve ser atualizado corretamente.
+- O item deve ser adicionado ao carrinho.
+
+**Resultado Atual**  
+- A ação é ignorada. O item não é adicionado ao carrinho, e o botão permanece inalterado.
+
+**Anexos**  
+[Na pasta deste repositorio, nomeado com o ID do defeito]
+
+
+**Ambiente de Teste**  
+- **Desktop**: Windows 11, Google Chrome.  
+
+**Histórico de Status**  
+- [x] Novo  
+- [ ] Em Análise  
+- [ ] Em Progresso  
+- [ ] Resolvido  
+- [ ] Não Reproduzível  
+- [ ] Rejeitado  
 
