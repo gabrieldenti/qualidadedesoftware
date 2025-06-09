@@ -311,7 +311,135 @@ Na página de checkout, ao digitar no campo “Last Name”, o valor é inserido
 - [ ] Não Reproduzível  
 - [ ] Rejeitado  
 
-### Defeito 004
+
+**Defeito 004**
+**Título do Bug**: Página de Checkout permite avançar mesmo com campos obrigatórios vazios
+**ID**: DFT-004
+**Reportado por**: Laila Covre
+**Data do Relato**: 06/06/2025
+**Versão do Sistema**: 1.0
+**Prioridade**: Alta
+**Severidade**: Crítica
+
+**Descrição**
+O sistema permite que o usuário avance para a próxima etapa do checkout mesmo sem preencher os campos obrigatórios “First Name”, “Last Name” e “Postal Code”.
+
+**Para Reproduzir**
+
+Acessar https://www.saucedemo.com e fazer login com usuário standard_user / secret_sauce
+
+Adicionar qualquer produto ao carrinho
+
+Ir para o carrinho e clicar em Checkout
+
+Deixar todos os campos em branco e clicar em Continue
+
+**Resultado Esperado**
+
+Sistema bloqueia o avanço e exibe mensagens de erro para os campos obrigatórios não preenchidos.
+
+**Resultado Atual**
+
+O sistema permite avançar mesmo com todos os campos em branco.
+
+**Anexos**
+[Na pasta deste repositório, nomeado com o ID do defeito]
+
+**Ambiente de Teste**
+
+Desktop: Windows 11, Google Chrome
+
+**Histórico de Status**
+
+- [x] Novo
+
+- [ ] Em Análise
+
+- [ ] Em Progresso
+
+- [ ] Resolvido
+
+- [ ] Não Reproduzível
+
+- [ ] Rejeitado
+
+**Defeito 005**
+**Título do Bug**: Ícone do carrinho não atualiza corretamente após remoção de itens
+**ID**: DFT-005
+**Reportado por**: Laila Covre
+**Data do Relato**: 06/06/2025
+**Versão do Sistema**: 1.0
+**Prioridade**: Média
+**Severidade**: Média
+
+**Descrição**
+Após remover um item do carrinho, o contador do ícone no canto superior direito permanece com a contagem anterior.
+
+**Para Reproduzir**
+
+Acessar https://www.saucedemo.com e fazer login com usuário standard_user / secret_sauce
+
+Adicionar dois produtos ao carrinho
+
+Remover um produto
+
+Observar o ícone do carrinho no topo da página
+
+**Resultado Esperado**
+
+O contador do carrinho deve atualizar automaticamente e refletir o número atual de itens.
+
+**Resultado Atual**
+
+O número no ícone continua igual ao anterior, mesmo após a remoção do item.
+
+**Anexos**
+[Na pasta deste repositório, nomeado com o ID do defeito]
+
+Ambiente de Teste
+
+Desktop: Windows 11, Microsoft Edge
+
+**Histórico de Status**
+
+- [x] Novo
+
+- [ ] Em Análise
+
+- [ ] Em Progresso
+
+- [ ] Resolvido
+
+- [ ] Não Reproduzível
+
+- [ ] Rejeitado
+
+**Defeito 006**
+**Título do Bug**: Campo de busca não retorna resultados relevantes
+**ID**: DFT-006
+**Reportado por**: Laila Covre
+**Data do Relato**: 06/06/2025
+**Versão do Sistema**: 1.0
+**Prioridade**: Baixa
+**Severidade**: Baixa
+
+**Descrição**
+Ao buscar termos como “bike” ou “light”, que fazem parte do nome de produtos disponíveis, nenhum resultado é retornado.
+
+**Para Reproduzir**
+
+Acessar https://www.saucedemo.com e fazer login com usuário standard_user / secret_sauce
+
+Usar o campo de busca (se disponível) e digitar termos como “bike” ou “light”
+
+**Resultado Esperado**
+
+O sistema deve retornar os produtos correspondentes ao termo pesquisado.
+
+**Resultado Atual**
+
+
+### Defeito 007
 
 **Título do Bug**: Produto incorreto é exibido ao clicar em item na página de produtos
 **ID**: DFT-004  
