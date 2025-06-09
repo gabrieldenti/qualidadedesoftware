@@ -117,7 +117,7 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **Evidências/Observações**| Ao digitar em **“Last Name”**, o texto sobrescreve o que foi digitado em **“First Name”**; o campo **“Last Name”** permanece vazio. |
 
 ---
-### CT007 – Inserir texto nos campos First Name e Last Name para verificar independência
+### CT007 – Redirecionamento ao clicar em item da listagem de produtos
 
 | Campo                     | Descrição                                                        |
 |---------------------------|------------------------------------------------------------------|
@@ -132,7 +132,7 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 
 ---
 
-### CT008 – Inserir texto nos campos First Name e Last Name para verificar independência
+### CT008 – Funcionamento do filtro de categoria na página de produtos
 
 | Campo                     | Descrição                                                        |
 |---------------------------|------------------------------------------------------------------|
@@ -145,7 +145,7 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 | **Status**                | Falhou                                                           |
 | **Evidências/Observações**| Produto incorreto é exibido (por exemplo,selecionei o filtro por preço, porém permaneceu filtrado por ordem alfabetica).
 
-### CT009 – Inserir texto nos campos First Name e Last Name para verificar independência
+### CT009 – Adicionar múltiplos produtos ao carrinho a partir da tela principal
 
 | Campo                     | Descrição                                                        |
 |---------------------------|------------------------------------------------------------------|
