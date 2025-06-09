@@ -40,18 +40,26 @@ Esta seção define o alcance dos testes a serem executados. Inclui:
 
 #### 2.2.1 Casos de uso
 
-| Identificador do caso de uso | Nome do caso de uso            |
-|------------------------------|--------------------------------|
-| UC_RemoverDoCarrinho            | Remover item do carrinho       |
-| UC_Checkout                  | Preencher informações de checkout e finalizar pedido |
+| Identificador do caso de uso | Nome do caso de uso                                     |
+| ---------------------------- | ------------------------------------------------------- |
+| UC\_RemoveDoCarrinho         | Remover item do carrinho                                |
+| UC\_Checkout                 | Preencher informações de checkout e finalizar pedido    |
+| UC\_NavegarParaDetalhes      | Acessar página de detalhes de um produto                |
+| UC\_FiltrarProdutos          | Filtrar produtos por categoria                          |
+| UC\_AdicionarAoCarrinho      | Adicionar produtos ao carrinho a partir da tela inicial |
+
 
 #### 2.2.2 Requisitos funcionais
 
-| Identificador do requisito | Nome do requisito                                                | Casos de uso relacionados    |
-|----------------------------|------------------------------------------------------------------|------------------------------|
-| RF001                      | Remover item do carrinho                                         | UC_RemoveDoCarrinho           |
-| RF002                      | Validar formato do CEP (apenas números)                          | UC_Checkout                  |
-| RF003                      | Validar campos First Name e Last Name (entrada independente)     | UC_Checkout                  |
+| Identificador do requisito | Nome do requisito                                                        | Casos de uso relacionados |
+| -------------------------- | ------------------------------------------------------------------------ | ------------------------- |
+| RF001                      | Remover item do carrinho                                                 | UC\_RemoveDoCarrinho      |
+| RF002                      | Validar formato do CEP (apenas números)                                  | UC\_Checkout              |
+| RF003                      | Validar campos First Name e Last Name (entrada independente)             | UC\_Checkout              |
+| RF007                      | Redirecionar corretamente à página de detalhes do produto clicado        | UC\_NavegarParaDetalhes   |
+| RF008                      | Filtrar corretamente os produtos por categoria selecionada               | UC\_FiltrarProdutos       |
+| RF009                      | Adicionar itens ao carrinho pela tela de listagem e atualizar o contador | UC\_AdicionarAoCarrinho   |
+
 
 
 ---
