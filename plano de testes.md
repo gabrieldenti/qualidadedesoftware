@@ -272,13 +272,13 @@ O campo “Postal Code” na página de checkout não valida o formato e aceita 
 
 ### Defeito 003 
 
-**Título do Bug**: Campo “Last Name” sobrescreve conteúdo de “First Name” ao digitar  
-**ID**: DFT-003  
-**Reportado por**: Gabriel Denti
-**Data do Relato**:05/06/2025  
+**Título do Bug**: Campo “Last Name” sobrescreve conteúdo de “First Name” ao digitar.  
+**ID**: DFT-003.
+**Reportado por**: Gabriel Denti.
+**Data do Relato**:05/06/2025. 
 **Versão do Sistema**: 1.0  
-**Prioridade**: Alta  
-**Severidade**: Alta  
+**Prioridade**: Alta
+**Severidade**: Alta
 
 **Descrição**  
 Na página de checkout, ao digitar no campo “Last Name”, o valor é inserido no campo “First Name”, apagando o nome digitado anteriormente.
@@ -414,7 +414,9 @@ Desktop: Windows 11, Microsoft Edge
 
 - [ ] Rejeitado
 
-**Defeito 006**
+
+### Defeito 006
+
 **Título do Bug**: Campo de busca não retorna resultados relevantes
 **ID**: DFT-006
 **Reportado por**: Laila Covre
@@ -442,12 +444,12 @@ O sistema deve retornar os produtos correspondentes ao termo pesquisado.
 ### Defeito 007
 
 **Título do Bug**: Produto incorreto é exibido ao clicar em item na página de produtos
-**ID**: DFT-004  
+**ID**: DFT-004 
 **Reportado por**: Caio Teixeira
-**Data do Relato**:09/06/2025  
-**Versão do Sistema**: 1.0  
-**Prioridade**: Alta  
-**Severidade**: Alta  
+**Data do Relato**:09/06/2025
+**Versão do Sistema**: 1.0
+**Prioridade**: Alta 
+**Severidade**: Alta
 
 **Descrição**  
 Clicando em qualquer produto na página principal redireciona o usuário para uma página de produto diferente, causando confusão e dificultando a navegação correta entre os itens.
@@ -480,12 +482,12 @@ O sistema redireciona para outro produto aleatório, diferente do que foi clicad
 ### Defeito 008 
 
 **Título do Bug**: Filtros da lista não aplicam alterações
-**ID**: DFT-008  
+**ID**: DFT-008
 **Reportado por**: Caio Teixeira
-**Data do Relato**:05/06/2025  
-**Versão do Sistema**: 1.0  
-**Prioridade**: Alta  
-**Severidade**: Média  
+**Data do Relato**:05/06/2025 
+**Versão do Sistema**: 1.0
+**Prioridade**: Alta
+**Severidade**: Média
 
 **Descrição**  
 Na tela onde há filtros para visualização de registros, ao alterar qualquer filtro, a lista não é atualizada. O sistema ignora a ação do usuário, permanecendo com o conteúdo anterior.
