@@ -675,3 +675,85 @@ Na página inicial onde são exibidos todos os produtos, ao clicar em "Add to ca
 - [ ] Não Reproduzível  
 - [ ] Rejeitado  
 
+### Defeito 010
+Título do Bug: Mensagem de erro inválida no checkout v1
+ID:DFT-010
+Reportado por: celso eloy
+Data do Relato: 6/6/25
+Versão do Sistema: 1.0
+Prioridade: baixa
+Severidade: média
+
+**Descrição:**
+Mensagem de erro inválida é exibida quando o usuário quer fazer checkout apenas com o Last Name preenchido
+
+**Para Reproduzir:**
+-	Usuario logou como standard_user
+-	Usuario vai para a pagina do carrinho
+-	Usuario tenha selecionado o(s) produto(s)
+
+1.	Usuario clica no botão de Checkout
+2.	Usuario preenche o apenas o campo Last Name
+3.	Usuario clica no botão de continuar
+**Resultado Esperado:**
+O sistema deveria retornar a seguinte mensagem de erro “Error: First Name and Postal Code are required”
+**Resultado Atual:** Sistema retorna a seguinte mensagem de erro: “Error: First Name is required”
+Anexos: se encontra com o ID do erro
+Ambiente de Teste
+Desktop: Windows 10, Opera, 119.0.5497.56
+
+
+### Defeito 011
+Título do Bug: Mensagem de erro invalida no checkout v2
+ID:DFT-011
+Reportado por: celso eloy
+Data do Relato: 6/6/25
+Versão do Sistema: 1.0
+Prioridade: baixa
+Severidade: media
+Descrição:
+Mensagem de erro inválida é exibida quando o usuário quer fazer checkout apenas com o First Name preenchido
+
+Para Reproduzir:
+-	Usuario logou como standard_user
+-	Usuario vai para a pagina do carrinho
+-	Usuario tenha selecionado o(s) produto(s)
+
+4.	Usuario clica no botão de Checkout
+5.	Usuario preenche o apenas o campo First Name
+6.	Usuario clica no botão de continuar
+Resultado Esperado
+O sistema deveria retornar a seguinte mensagem de erro “Error: Last Name and Postal Code are required”
+Resultado Atual: Sistema retorna a seguinte mensagem de erro: “Error: Last Name is required”
+Anexos: se encontra com o ID do erro
+Ambiente de Teste
+Desktop: Windows 10, Opera, 119.0.5497.56
+
+### Defeito 012
+Título do Bug: Mensagem de erro invalida no checkout v3
+ID:DFT-012
+Reportado por: celso eloy
+Data do Relato: 6/6/25
+Versão do Sistema: 1.0
+Prioridade: baixa
+Severidade: media
+**Descrição:**
+Mensagem de erro inválida é exibida quando o usuário quer fazer checkout apenas com o First Name preenchido
+
+**Para Reproduzir:**
+-	Usuario logou como standard_user
+-	Usuario vai para a pagina do carrinho
+-	Usuario tenha selecionado o(s) produto(s)
+
+7.	Usuario clica no botão de Checkout
+8.	Usuario preenche o apenas o campo Postal Code
+9.	Usuario clica no botão de continuar
+**Resultado Esperado:**
+O sistema deveria retornar a seguinte mensagem de erro “Error: First Name and Last Name are required”
+**Resultado Atual:** Sistema retorna a seguinte mensagem de erro: “Error: First Name is required”
+
+Anexos: se encontra com o ID do erro
+
+
+Ambiente de Teste
+Desktop: Windows 10, Opera, 119.0.5497.56
