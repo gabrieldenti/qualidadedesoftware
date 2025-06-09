@@ -477,3 +477,43 @@ O sistema redireciona para outro produto aleatório, diferente do que foi clicad
 - [ ] Não Reproduzível  
 - [ ] Rejeitado  
 
+### Defeito 005 
+
+**Título do Bug**: Filtros da lista não aplicam alterações
+**ID**: DFT-005  
+**Reportado por**: Caio Teixeira
+**Data do Relato**:05/06/2025  
+**Versão do Sistema**: 1.0  
+**Prioridade**: Alta  
+**Severidade**: Média  
+
+**Descrição**  
+Na tela onde há filtros para visualização de registros, ao alterar qualquer filtro, a lista não é atualizada. O sistema ignora a ação do usuário, permanecendo com o conteúdo anterior.
+
+**Para Reproduzir**  
+1. Acessar https://www.saucedemo.com e fazer login com usuário **problem_user** / **secret_sauce”.  
+2. Alterar o valor de qualquer filtro (ex: nome, preço).
+3. Observar que a lista exibida não sofre alterações. 
+
+**Resultado Esperado**  
+- A lista deve ser atualizada automaticamente com base nos filtros selecionados.  
+
+**Resultado Atual**  
+- A lista permanece inalterada mesmo após modificar os filtros. Nenhuma atualização ocorre.
+
+**Anexos**  
+[Na pasta deste repositorio, nomeado com o ID do defeito]
+
+
+**Ambiente de Teste**  
+- **Desktop**: Windows 11, Google Chrome.  
+
+**Histórico de Status**  
+- [x] Novo  
+- [ ] Em Análise  
+- [ ] Em Progresso  
+- [ ] Resolvido  
+- [ ] Não Reproduzível  
+- [ ] Rejeitado  
+
+
